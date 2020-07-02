@@ -2,6 +2,11 @@
 Using methods with the same name but with different arguments.
 
 ```java
+/*Instruction
+Create two methods with the same name that converts feet and inches to centimeters, one with two parameter feet and inches, 
+and the other with just inches. Use the former one in the latter one to calculate.
+*/
+
 public class overLoading {
     public static void main(String[] args) {
         System.out.println(calcFeetAndInchesToCentimeters(6,5)); //195.57999999999998
@@ -15,9 +20,7 @@ public class overLoading {
             double inchesToCent = inches * 2.54;
             double feetToCent = feet * 12 * 2.54;
 
-            double result = inchesToCent + feetToCent;
-
-            return result;
+            return feetToCent + inchesToCent;
         }
 
         return -1;
