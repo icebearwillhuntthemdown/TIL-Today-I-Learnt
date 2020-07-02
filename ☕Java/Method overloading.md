@@ -1,5 +1,5 @@
 # Method Overloading
-Using methods with the same name but with different arguments
+Using methods with the same name but with different arguments.
 
 ```java
 public class overLoading {
@@ -12,10 +12,10 @@ public class overLoading {
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
 
         if(feet >= 0 && (inches >= 0 && inches <= 12)){
-            double inchToCent = inches * 2.54;
+            double inchesToCent = inches * 2.54;
             double feetToCent = feet * 12 * 2.54;
 
-            double result = inchToCent + feetToCent;
+            double result = inchesToCent + feetToCent;
 
             return result;
         }
