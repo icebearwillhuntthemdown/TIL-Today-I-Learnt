@@ -1,5 +1,20 @@
 # Method Overloading
-Using methods with the same name but with different arguments.
+
+### Definition
+To create multiple methods of the same name, with different implementations.
+
+### Why method overload?
+  * improves code readability and re-usability
+  * easier to remember one method name instead of multiple names
+  * achieves consistency in naming
+  * gives the flexibility to call a similar method with different types of data
+  
+### Example
+System.out.println() is actually a good example of method overloading.
+There are 10 methods of the same name that take different arguments.
+
+
+
 
 ```java
 /*Instruction
