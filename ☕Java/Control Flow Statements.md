@@ -63,7 +63,7 @@ class SwitchDemo {
     }
 }
 ```
-:bulb: 복수의 조건을 연달아 쓸 수 있단 것을 알게 됐다. 
+
 
 2. For
 3. While
