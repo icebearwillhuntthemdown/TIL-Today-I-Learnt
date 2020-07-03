@@ -10,7 +10,7 @@ To create multiple methods of the same name, with different implementations.
   * gives the flexibility to call a similar method with different types of data
   
 ### Example
-![Example of method overloading](./imgs/sysout.jpg)
+![Example of method overloading](/imgs/sysout.jpg)
 System.out.println() is actually a good example of method overloading.
 There are 10 methods of the same name that take different arguments.
 
