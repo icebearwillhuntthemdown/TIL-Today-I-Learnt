@@ -1,6 +1,7 @@
 # :writing_hand: TIL-Today I Learnt
-Today I Learnt / :writing_hand: 기록의 의무, 매일 새로 배운 내용과 감상을 정리하는 학습 저장소입니다. 
-<img src="/imgs/answer.jpg" width="300px">
+<p align="center"><img src="/imgs/answer.jpg" width="400px"></p>
+Today I Learnt / :writing_hand: 기록의 의무, 매일 새로 배운 내용과 감상을 정리하는 학습 저장소입니다.  
+
 
 ### One day or day one, you choose it! 🔥
 
