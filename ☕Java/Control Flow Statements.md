@@ -95,4 +95,5 @@ public static boolean isPrime(int n){ //소수 판별 함수
 Break|Continue
 -----|-----
 jumps out of a loop | skips a single iteration 
+goes to the next line following the loop block | goes to the next iteration in the loop
 
