@@ -71,5 +71,21 @@ for(init; condition; iteration step){
 ```
 :bulb: Iteration step is not necessarily one. It can be any number e.g.) i += 2
 
+##### Example
+``` java
+public static boolean isPrime(int n){ //소수 
+  if(n == 1){
+    return false;
+  }
+  
+  for(int i = 2; i < Math.sqrt(n); i++){
+    if(n % i == 0)}
+      return false;
+    }
+  }
+  return true;
+}
+```
+
 3. While
 4. Do While
