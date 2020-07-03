@@ -9,7 +9,7 @@ Switch(varToValidate){
   case condition2 :
     //code to be executed
     break;
-  case condition3: condition4: condition5:  //able to concatenate! :bulb:
+  case condition3: case condition4: case condition5:  //able to concatenate! 
     //code to be executed
     break;
   default:
@@ -17,6 +17,7 @@ Switch(varToValidate){
     break;
 }
 ```
+:bulb: 복수의 조건을 연달아 쓸 수 있단 것을 알게 됐다. 
 
 2. For
 3. While
