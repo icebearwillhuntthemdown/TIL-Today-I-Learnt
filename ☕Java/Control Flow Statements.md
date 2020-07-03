@@ -1,6 +1,6 @@
 # Control Flow Statements
 
-1. Switch
+1. Switch : To test a single variable for multiple values
 ```java
 Switch(varToValidate){
   case condition1 :
