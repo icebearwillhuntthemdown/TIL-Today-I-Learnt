@@ -90,3 +90,9 @@ public static boolean isPrime(int n){ //소수 판별 함수
 
 3. While
 4. Do While
+
+### +)Break and Continue
+Break|Continue
+-----|-----
+jumps out of a loop | skips a single iteration 
+
