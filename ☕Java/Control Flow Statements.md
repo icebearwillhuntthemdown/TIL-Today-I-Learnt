@@ -1,9 +1,9 @@
 # Control Flow Statements
 아주 기초적인 요소지만, 분명 내가 모르고 지나친 내용이 있을 것 같아 복습할 겸 정리한다. 안다고 자만하지 말기! 
 
-1. Switch : To test **a certain variable** for multiple values
+### Switch : To test **a certain variable** for multiple values
 
-### Syntax
+##### Syntax
 ```java
 Switch(varToValidate){
   case condition1 :
@@ -21,7 +21,7 @@ Switch(varToValidate){
 }
 ```
 
-### Example
+##### Example
 Attribution to [StackOverFlow](https://stackoverflow.com/questions/16706716/using-two-values-for-one-switch-case-statement)
 ```java
 class SwitchDemo {
@@ -62,8 +62,8 @@ class SwitchDemo {
 }
 ```
 
-2. For
-### Syntax
+### For
+##### Syntax
 ```java
 for(init; condition; iteration step){
   //statements
