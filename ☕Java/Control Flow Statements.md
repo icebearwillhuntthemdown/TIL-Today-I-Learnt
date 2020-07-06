@@ -123,7 +123,7 @@ System.out.println("The total number of even numbers is " + numOfEven);
 ```java
 do {
   // statements   >> the statements in the do block is executed once, before conditional validation
-} while(condition); // >> ***Semicolon required!***
+} while(condition); // ***Semicolon required!***
   
 ```
 
