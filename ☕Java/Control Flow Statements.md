@@ -88,9 +88,38 @@ public static boolean isPrime(int n){ //소수 판별 함수
 }
 ```
 
-### 3. Do While
+### 3. While
+##### Example
+``` java
 
-##### Syntax
+        int num = 4;
+        int finishNum = 20;
+        
+        //Make it record the total number of even numbers it has found
+        //and break once 5 are found
+        
+        int numOfEven = 0;
+
+        while(num <= finishNum){
+            num++;
+            if(!isEvenNumber(num)){
+                continue;
+            }
+
+            System.out.println(num + " is an even number.");
+            numOfEven++;
+
+            if(numOfEven == 5){
+                break;
+            }
+        }
+
+        System.out.println("The total number of even numbers is " + numOfEven);
+
+```
+
+
+##### +) Do While 
 ```java
 do {
   // statements   >> the statements in the do block is executed once, before conditional validation
