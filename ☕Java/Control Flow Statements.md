@@ -1,7 +1,7 @@
 # Control Flow Statements
 아주 기초적인 요소지만, 분명 내가 모르고 지나친 내용이 있을 것 같아 복습할 겸 정리한다. 안다고 자만하지 말기! 
 
-### Switch
+### 1. Switch
 To test **a certain variable** for multiple values
 
 ##### Syntax
@@ -63,7 +63,7 @@ class SwitchDemo {
 }
 ```
 
-### For
+### 2. For
 ##### Syntax
 ```java
 for(init; condition; iteration step){
@@ -88,8 +88,16 @@ public static boolean isPrime(int n){ //소수 판별 함수
 }
 ```
 
-3. While
-4. Do While
+### 3. Do While
+
+##### Syntax
+```java
+do {
+  // statements   >> the statements in the do block is executed once, before conditional validation
+} while(condition); 
+  
+```
+
 
 ### +)Break and Continue
 Break|Continue
