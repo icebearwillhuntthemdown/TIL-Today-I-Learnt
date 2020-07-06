@@ -119,7 +119,7 @@ System.out.println("The total number of even numbers is " + numOfEven);
 ```
 
 
-##### +) Do While 
+##### +) Do While : the code block is executed at least once
 ```java
 do {
   // statements   >> the statements in the do block is executed once, before conditional validation
@@ -131,7 +131,7 @@ do {
 ### +)Break and Continue
 Break|Continue
 -----|-----
-jumps out of a loop | skips a single iteration 
+exits the loop | skips a single iteration 
 goes to the next line following the loop block | goes to the next iteration in the loop
 
-+) Labeling : to break and continue to a certain loop in nested loops
+##### +)Labeling : to break and continue to a certain loop in nested loops
