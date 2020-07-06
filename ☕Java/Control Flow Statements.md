@@ -92,29 +92,29 @@ public static boolean isPrime(int n){ //소수 판별 함수
 ##### Example
 ``` java
 
-        int num = 4;
-        int finishNum = 20;
-        
-        //Make it record the total number of even numbers it has found
-        //and break once 5 are found
-        
-        int numOfEven = 0;
+int num = 4;
+int finishNum = 20;
 
-        while(num <= finishNum){
-            num++;
-            if(!isEvenNumber(num)){
-                continue;
-            }
+//Make it record the total number of even numbers it has found
+//and break once 5 are found
 
-            System.out.println(num + " is an even number.");
-            numOfEven++;
+int numOfEven = 0;
 
-            if(numOfEven == 5){
-                break;
-            }
-        }
+while(num <= finishNum){
+    num++;
+    if(!isEvenNumber(num)){
+        continue;
+    }
 
-        System.out.println("The total number of even numbers is " + numOfEven);
+    System.out.println(num + " is an even number.");
+    numOfEven++;
+
+    if(numOfEven == 5){
+        break;
+    }
+}
+
+System.out.println("The total number of even numbers is " + numOfEven);
 
 ```
 
