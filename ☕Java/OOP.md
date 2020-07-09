@@ -1,9 +1,8 @@
 # OOP : Object-Oriented Programming
 
 ### Object
-A software object stores its **state** in fields, a.k.a variables, and expose their **behaviour** with methods
-
-
+A software object stores its **state** in fields, a.k.a variables, and expose their **behaviour** with methods  
+<br/><br/>
 ### Class
 A template, or blueprint for creating objects.
 ```java
@@ -30,9 +29,8 @@ public class Main{
     //My camera is made by sony
   }
 }
-```
-
-
+```  
+<br/><br/>
 ### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)(캡슐화)
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
@@ -41,7 +39,7 @@ To wrap the fields and methods together as a single unit
 * Encapsulation makes the fields of a class can be made read-only and write-only,
 * So that a class can have total control over what is stored in its fields.
 
-
+<br/><br/>
 ### Constructor
 ```java
 public class Camera{
