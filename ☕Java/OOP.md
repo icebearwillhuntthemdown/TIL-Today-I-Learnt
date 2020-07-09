@@ -3,6 +3,7 @@
 ### Object
 A software object stores its **state** in fields, a.k.a variables, and expose their **behaviour** with methods
 
+
 ### Class
 A template, or blueprint for creating objects.
 ```java
@@ -30,6 +31,8 @@ public class Main{
   }
 }
 ```
+
+
 ### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)(캡슐화)
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
@@ -37,6 +40,7 @@ To wrap the fields and methods together as a single unit
 * And can only be accessed through the methods of the class, which are **getters and setters(public)**.
 * Encapsulation makes the fields of a class can be made read-only and write-only,
 * So that a class can have total control over what is stored in its fields.
+
 
 ### Constructor
 ```java
@@ -55,6 +59,7 @@ public class Camera{
   }
 }
 ```
+* Definition : A method called to initialise a newly created object
 * A constructor can be called from another
 * **this** keyword is used to assign default values to fields, but must match with all the existing ones
 * Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
