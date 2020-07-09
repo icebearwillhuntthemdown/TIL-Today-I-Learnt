@@ -42,7 +42,7 @@ To wrap the fields and methods together as a single unit
 <br/>
 
 ### Constructor
-A method called to initialise a newly created object
+A method called to initialise a newly created object, without any return value but an instance of current class.
 ```java
 public class Camera{
   private String brand;
@@ -50,7 +50,7 @@ public class Camera{
   private int launchYear;
   
   public Camera(){
-    this("Generic Brand", "Unknown Model", 2020); //Assign default values with 'this' keyword
+    this("Generic Brand", "Unknown Model", 2020); //constructor invocation
   }
   
   public Camera(String brand, int launchYear){  //Constructors can be overloaded
@@ -60,6 +60,16 @@ public class Camera{
 }
 ```
 * A constructor can be called from another
-* **this** keyword is used to assign default values to fields, but must match with all the existing ones
 * Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
+* Return within a constructor works like break in loops
+
+##### +) THIS keyword : [constructor invocation](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html)
+From within a constructor, you can also call another constructor in the same class, using the **this** keyword. The compiler determines which one to call, based on the parameters.
+
+:bulb: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
+
+
+
+
+
 
