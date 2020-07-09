@@ -30,7 +30,7 @@ public class Main{
   }
 }
 ```
-### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)
+### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)(캡슐화)
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
 * The fields will be hidden from other classes using **private** keword, 
