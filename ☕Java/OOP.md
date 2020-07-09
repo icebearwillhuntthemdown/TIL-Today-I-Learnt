@@ -32,7 +32,7 @@ public class Main{
 ### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
-* The fields will be hidden from other classes using 'private' keword, 
-* And can only be accessed through the methods of the class, which are getters and setters.
+* The fields will be hidden from other classes using **private** keword, 
+* And can only be accessed through the methods of the class, which are **getters and setters**.
 * Encapsulation makes the fields of a class can be made read-only and write-only,
-* so that a class can have total control over what is stored in its fields.
+* So that a class can have total control over what is stored in its fields.
