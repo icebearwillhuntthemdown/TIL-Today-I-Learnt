@@ -37,3 +37,25 @@ To wrap the fields and methods together as a single unit
 * And can only be accessed through the methods of the class, which are **getters and setters(public)**.
 * Encapsulation makes the fields of a class can be made read-only and write-only,
 * So that a class can have total control over what is stored in its fields.
+
+### Constructor
+```java
+public class Camera{
+  private String brand;
+  private String model;
+  private int launchYear;
+  
+  public Camera(){
+    this("Generic Brand", "Unknown Model", 2020); //Assign default values with 'this' keyword
+  }
+  
+  public Camera(String brand, int launchYear){  //Constructors can be overloaded
+    this.brand = brand;
+    this.launchYear = launchYear;
+  }
+}
+```
+* A constructor can be called from another
+* **this** keyword is used to assign default values to fields, but must match with all the existing ones
+* Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
+
