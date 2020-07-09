@@ -31,6 +31,7 @@ public class Main{
 }
 ```  
 <br/>
+
 ### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)(캡슐화)
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
@@ -39,6 +40,7 @@ To wrap the fields and methods together as a single unit
 * Encapsulation makes the fields of a class can be made read-only and write-only,
 * So that a class can have total control over what is stored in its fields.
 <br/>
+
 ### Constructor
 ```java
 public class Camera{
