@@ -34,6 +34,6 @@ public class Main{
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
 * The fields will be hidden from other classes using **private** keword, 
-* And can only be accessed through the methods of the class, which are **getters and setters**.
+* And can only be accessed through the methods of the class, which are **getters and setters(public)**.
 * Encapsulation makes the fields of a class can be made read-only and write-only,
 * So that a class can have total control over what is stored in its fields.
