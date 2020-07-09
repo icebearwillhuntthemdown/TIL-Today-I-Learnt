@@ -63,10 +63,10 @@ public class Camera{
 * Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
 * Return within a constructor works like break in loops
 
-##### +) THIS keyword : [constructor invocation](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html)
+##### :bulb: THIS keyword : [constructor invocation](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html)
 From within a constructor, you can also call another constructor in the same class, using the **this** keyword. The compiler determines which one to call, based on the parameters.
 
-:bulb: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
+:heavy_check_mark: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
 
 
 
