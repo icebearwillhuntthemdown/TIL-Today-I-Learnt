@@ -23,9 +23,10 @@ public class Camera{
 ```java
 public class Main{
   public static void main(String args[]){
-    Camera mine = new Camrera();
-    mine.setBrand("sony");
+    Camera myCamera = new Camrera();
+    myCamera.setBrand("sony");
     System.out.println("My camera is made by " + mine.getBrand());
+    //My camera is made by sony
   }
 }
 ```
