@@ -42,6 +42,7 @@ To wrap the fields and methods together as a single unit
 <br/>
 
 ### Constructor
+A method called to initialise a newly created object
 ```java
 public class Camera{
   private String brand;
@@ -58,7 +59,6 @@ public class Camera{
   }
 }
 ```
-* Definition : A method called to initialise a newly created object
 * A constructor can be called from another
 * **this** keyword is used to assign default values to fields, but must match with all the existing ones
 * Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
