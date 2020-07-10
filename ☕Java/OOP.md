@@ -30,7 +30,13 @@ public class Main{
     //My camera is made by sony
   }
 }
-```  
+```
+##### Class, Instance, and Reference
+A good metaphor to explain the concepts of class, instance, and reference.
+* Class : A blueprint for a house. You can build as many houses as you want based on this.
+* Instance : The house you built with the blueprint.
+* Reference : A piece of paper on which the address of the house is written, which means multiple references can point the same object.
+
 <br/>
 
 ### 🔵 [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm) 캡슐화
@@ -75,7 +81,7 @@ From within a constructor, you can also call **another constructor in the same c
 
 <br/>
 
-### 🔵 Inheritance 
+### 🔵 Inheritance 상속  
 The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called **Super class(Parent class)** and the inherting class is **Sub class(Child class)**.
 
 ```java
@@ -120,11 +126,5 @@ public class Rectangle extends Shape{
 
 
   
-### Class, Instance, and Reference
-A good metaphor to explain the concepts of class, instance, and reference.
-* Class : A blueprint for a house. You can build as many houses as you want based on this.
-* Instance : The house you built with the blueprint.
-* Reference : A piece of paper on which the address of the house is written, which means multiple references can point the same object.
-
 
 
