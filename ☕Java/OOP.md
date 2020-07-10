@@ -68,7 +68,7 @@ From within a constructor, you can also call **another constructor in the same c
 
 :heavy_check_mark: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
 
-
++) to invoke(n.invocation) : to cite or appeal to so or sth as an authority for an action or in support of an arguement. 우리말로 하면 가져다 쓰다, 근거로 들다, 호출하다 정도 되겠다.
 
 
 
