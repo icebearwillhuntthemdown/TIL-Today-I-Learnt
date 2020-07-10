@@ -66,13 +66,65 @@ public class Camera{
 
 <br/>
 
-##### :bulb: [THIS keyword](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html) : constructor invocation
+##### :bulb: [THIS keyword](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html) : constructor invocation, constructor chaining
 From within a constructor, you can also call **another constructor in the same class**, using the **this** keyword. The compiler determines which one to call, based on the parameters.
 
 :heavy_check_mark: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
 
-+) to invoke(n.invocation) : to cite or appeal to so or sth as an authority for an action or in support of an arguement. 우리말로 하면 가져다 쓰다, 근거로 들다, 호출하다 정도 되겠다.
++) to invoke(n.invocation) : to cite or appeal to so or sth as an authority for an action or in support of an arguement. 우리말로 하면 가져다 쓰다, 근거로 들다, 호출하다 정도.
 
+<br/>
+
+### Inheritance
+The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called Super class(Parent class) and the inherting class is Sub class(Child class).
+
+```java
+public class Shape{
+  private int x;
+  private int y;
+  
+  public Shape(int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+}
+
+public class Rectangle extends Shape{
+  private int width;
+  private int height;
+  
+  public Rectangle(int x, int y){
+    this(x, y, 0, 0); //calling the other constructor, constructor chaining
+  }
+  
+  public Rectangle(int x, int y, int width, int height){
+    super(x, y);  // calling the parent method constructor
+    this.width = width;
+    this.height = height;
+  }
+}
+```
+
+##### Super and This
+* super : refers to the parent class members(fields and methods).
+  * commonly used with method overriding
+  * to differentiate the inherited method with overriden method.
+  * super() is used to call parent constructor
+* this : refers to the current class members(fields and methods).
+  * used when there's a parameter with the same name as an instance variable
+  * hence, commonly used in constructors and setters, but optional in getters
+  * this() is used to call another constructor in the current class
+
+❗ Super and This can be used anywhere in a class except static areas
+❗ super() and this() cannot be used together in the same constructor.
+
+
+
+### Class, Instance, and Reference
+A good metaphor to explain the concepts of class, instance, and reference.
+* Class : A blueprint for a house. You can build as many houses as you want based on this.
+* Instance : The house you built with the blueprint.
+* Reference : A piece of paper on which the address of the house is written, which means multiple references can point the same object.
 
 
 
