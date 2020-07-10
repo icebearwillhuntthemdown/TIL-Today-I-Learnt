@@ -76,7 +76,7 @@ From within a constructor, you can also call **another constructor in the same c
 <br/>
 
 ### Inheritance
-The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called Super class(Parent class) and the inherting class is Sub class(Child class).
+The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called **Super class(Parent class)** and the inherting class is **Sub class(Child class)**.
 
 ```java
 public class Shape{
@@ -119,7 +119,7 @@ public class Rectangle extends Shape{
 ❗ super() and this() cannot be used together in the same constructor.
 
 
-
+  
 ### Class, Instance, and Reference
 A good metaphor to explain the concepts of class, instance, and reference.
 * Class : A blueprint for a house. You can build as many houses as you want based on this.
