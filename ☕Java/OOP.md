@@ -50,7 +50,7 @@ public class Camera{
   private int launchYear;
   
   public Camera(){
-    this("Generic Brand", "Unknown Model", 2020); //constructor invocation
+    this("Generic Brand", 2020); //constructor invocation
   }
   
   public Camera(String brand, int launchYear){  //Constructors can be overloaded
@@ -64,7 +64,7 @@ public class Camera{
 * Return within a constructor works like break in loops
 
 ##### :bulb: THIS keyword : [constructor invocation](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html)
-From within a constructor, you can also call another constructor in the same class, using the **this** keyword. The compiler determines which one to call, based on the parameters.
+From within a constructor, you can also call **another constructor in the same class**, using the **this** keyword. The compiler determines which one to call, based on the parameters.
 
 :heavy_check_mark: Good practice : To do initialisation in certain constructors and then call them from the default constructor, so that you don't have to write repetitive codes. 
 
