@@ -33,7 +33,7 @@ public class Main{
 ```  
 <br/>
 
-### [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm)(캡슐화)
+### 🔵 [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm) 캡슐화
 To wrap the fields and methods together as a single unit
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
 * The fields will be hidden from other classes using **private** keword, 
@@ -75,7 +75,7 @@ From within a constructor, you can also call **another constructor in the same c
 
 <br/>
 
-### Inheritance
+### 🔵 Inheritance 
 The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called **Super class(Parent class)** and the inherting class is **Sub class(Child class)**.
 
 ```java
