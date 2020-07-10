@@ -3,6 +3,7 @@
 ### Object
 A software object stores its **state** in fields, a.k.a variables, and expose their **behaviour** with method 
 <br/>
+
 ### Class
 A template, or blueprint for creating objects.
 ```java
@@ -62,6 +63,7 @@ public class Camera{
 * A constructor can be called from another
 * Constructor can be overloaded, meaning there can be multiple of them with difference in parameters
 * Return within a constructor works like break in loops
+
 <br/>
 
 ##### :bulb: [THIS keyword](https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html) : constructor invocation
