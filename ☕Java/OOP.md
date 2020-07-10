@@ -115,7 +115,7 @@ public class Rectangle extends Shape{
   * hence, commonly used in constructors and setters, but optional in getters
   * this() is used to call another constructor in the current class
 
-❗ Super and This can be used anywhere in a class except static areas
+❗ Super and This can be used anywhere in a class except static areas.    
 ❗ super() and this() cannot be used together in the same constructor.
 
 
