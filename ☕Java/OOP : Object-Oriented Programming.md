@@ -40,7 +40,7 @@ A good metaphor to explain the concepts of class, instance, and reference.
 <br/>
 
 ### 🔵 [Encapsulation](https://www.tutorialspoint.com/java/java_encapsulation.htm) 캡슐화
-To wrap the fields and methods together as a single unit
+To wrap fields and methods together as a single unit and keep them safe from outside interference
 * One of **the four fundamental OOP concepts**, the rest are inheritance, polymorphism, and abstraction. 
 * The fields will be hidden from other classes using **private** keword, 
 * And can only be accessed through the methods of the class, which are **getters and setters(public)**.
