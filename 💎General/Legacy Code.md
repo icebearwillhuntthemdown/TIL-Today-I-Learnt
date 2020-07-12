@@ -17,9 +17,9 @@ Mighty Google에게 물어봤더니 의외로 정의가 다양하다. 첫사랑�
 > 4.Try Refactoring instead : Refactor code that has unit tests so you know what you have and test after refactoring to make sure you didn't break anything.  
 
 ### Legacy Code is a personal point of view
-> Legacy Code is a personal point of view. It depends on your understanding of the code. And your feeling about changing it.  
+> It depends on your understanding of the code. And your feeling about changing it.  
 
-[이 글](https://understandlegacycode.com/blog/what-is-legacy-code-is-it-code-without-tests/))에서 가장 인상 깊은 부분이다. 레거시 코드는 으레 지저분한 코드, 이해하기 어려운 코드 등 부정적으로 여겨지지만, 사실 개인의 관점에 따라 달라질 수 있는 생각이라는 것.  
+[이 글](https://understandlegacycode.com/blog/what-is-legacy-code-is-it-code-without-tests/)에서 가장 인상 깊은 부분이다. 레거시 코드는 으레 지저분한 코드, 이해하기 어려운 코드 등 부정적으로 여겨지지만, 사실 개인의 관점에 따라 달라질 수 있는 생각이라는 것.  
 
 그저 레거시 코드가 정확히 뭔지 궁금해서 찾아보기 시작했는데 레거시 코드, 테스트, 리팩토링을 왜 다들 그렇게 강조하는지 알게된 시간이었다. 내가 작성한 코드를 레거시 코드로 마주할 사람을 생각해서라도 클린 코드를 쓰려고 노력해야겠다.  
 
