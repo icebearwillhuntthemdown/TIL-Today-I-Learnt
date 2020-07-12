@@ -11,7 +11,7 @@ There are some other important features like...
   * Unlike Java, in C/C++ programmer is responsible for both creation and destruction of objects. Neglection on the destruction of unused objects, it can bring about memory shortage, which can lead to abnoraml termination of the entire program.
   * In Java, garbage collector takes the destruction job for programmer, freeing heap memory by destorying unreachable objects which don't have any reference to them.
 * Object-Oriented Programming(OOP) : almost every part of a program is an object, therefore, a program itself can be considered a set of interacting objects. Below are the 4 pillars of OOP.
-  * Encapsulation : Binding fields and methods together and keep them safe from outside interference
+  * Encapsulation 
   * Inheritance
   * Polymorhpism
   * Abstraction
