@@ -61,6 +61,8 @@ Keep the sets of date separate at all time!
 * Underfitting : Poor performance on training data. The model hasn't learned properly.
 
 
+## Useful Materials
+https://www.elementsofai.com/
 https://teachablemachine.withgoogle.com/
 
 
