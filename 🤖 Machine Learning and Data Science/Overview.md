@@ -60,9 +60,10 @@ Keep the sets of date separate at all time!
 * Overfitting : Great performance on training data but poor performance on test data, or better performance on test data than training data. The model doesn't generalise well.
 * Underfitting : Poor performance on training data. The model hasn't learned properly.
 
+<br/><br/>
 
 ## Useful Materials
-https://www.elementsofai.com/
+https://www.elementsofai.com/  
 https://teachablemachine.withgoogle.com/
 
 
