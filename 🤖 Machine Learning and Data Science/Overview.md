@@ -1,5 +1,3 @@
-https://teachablemachine.withgoogle.com/
-
 
 ### Why ML?
 "To turn data from useless to useful"  
@@ -24,11 +22,13 @@ To use machines to predict results based on incoming data. In other words, to ge
 * Structured data : can be organised in tabular format and data in the same column has the same type
 * Unstructured data : typically come in varying formats like images, audios, videos, natural language text
 <br/>
+
 * Static data : data that doesn't change over time. e.g.) CSV(Comma Seperated Values) data
 * Streaming data : data that changes constantly over time. e.g.) a stock price
 ##### +) NoSQL : Not Only SQL, Non-relational DataBase
 NoSQL is used to store huge amounts of unstructured data in a different format than relational database.
 <br/>
+
 ###### Types of NoSQL Database
 * Document databases
 * Key-value databases
@@ -36,3 +36,7 @@ NoSQL is used to store huge amounts of unstructured data in a different format t
 * Graph databases
 
 Reference from [MongoDB](https://www.mongodb.com/nosql-explained)
+
+https://teachablemachine.withgoogle.com/
+
+
