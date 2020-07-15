@@ -13,7 +13,7 @@ To use machines to predict results based on incoming data. In other words, to ge
 ### NoSQL : Not Only SQL, Non-relational DataBase
 NoSQL is used to store huge amounts of unstructured data in a different format than relational database.
 <br/>
-+) unstructured data?  
+##### +) unstructured data?  
 Images, audios, user behaviour, user likes, user purchasing history, etc.
 
 ##### Types of NoSQL Database
