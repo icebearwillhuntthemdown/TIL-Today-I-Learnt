@@ -27,15 +27,13 @@ To use machines to predict results based on incoming data. In other words, to ge
 * Streaming data : data that changes constantly over time. e.g.) a stock price
 ##### +) NoSQL : Not Only SQL, Non-relational DataBase
 NoSQL is used to store huge amounts of unstructured data in a different format than relational database.
-<br/>
-
-###### Types of NoSQL Database
+###### Types of NoSQL Database 
 * Document databases
 * Key-value databases
 * Wide-column stores
 * Graph databases
+[Reference](https://www.mongodb.com/nosql-explained)
 
-Reference from [MongoDB](https://www.mongodb.com/nosql-explained)
 
 https://teachablemachine.withgoogle.com/
 
