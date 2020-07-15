@@ -2,7 +2,7 @@ https://teachablemachine.withgoogle.com/
 
 
 ### Why ML?
-"To turn data from useless to useful"
+"To turn data from useless to useful"  
 To use machines to predict results based on incoming data. In other words, to get insights from massive amount of data so that we can make better decisions. As the accumulation of data is getting massive and massive, we give the data to machines in order to optimize and automate the process and avoid human errors.
 
 ### NoSQL : Not Only SQL, Non-relational DataBase
