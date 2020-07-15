@@ -6,10 +6,10 @@ https://teachablemachine.withgoogle.com/
 To use machines to predict results based on incoming data. In other words, to get insights from massive amount of data so that we can make better decisions. As the accumulation of data is getting massive and massive, we give the data to machines in order to optimize and automate the process and avoid human errors.
 
 ### Types of ML
-* Supervised Learning : using data to predict a label
+* Supervised Learning : Using data to predict a label, when you have inputs and ouputs.
   * Classification : Binary classification, Multi-class classification
   * Regression : Trying to predict if a number would go up or down 
-* Unsupervised Learning : using data to predict a pattern
+* Unsupervised Learning : using data to predict a pattern, when you only have inputs.
   * Clustering 
   * Association 
   * Rule learning
