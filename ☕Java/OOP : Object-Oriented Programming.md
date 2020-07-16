@@ -124,6 +124,9 @@ public class Rectangle extends Shape{
 ❗ Super and This can be used anywhere in a class except static areas.    
 ❗ super() and this() cannot be used together in the same constructor.
 
+<br/><br/>
+
+static and instance methods
 
   
 
