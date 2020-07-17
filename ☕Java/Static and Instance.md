@@ -19,20 +19,27 @@ it means exactly a single copy of the field is created to be shared among all in
 
 ## Instance methods
 Methods which required an object of its class to be created before it can be called.
-* referenced by object name, **objectName.methodName(args)**
-* stored in Permanent Generation space of heap but the parameters and their local variables and the return value are allocated in stack
 * belong to the object of the class, not the to class
-* every individual object has its own copy of the instance methods
+* hence, referenced by object name **objectName.methodName(args)**
+* every individual object has **its own copy** of the instance methods
+* stored in Metaspace of heap but the parameters and their local variables and the return value are allocated in stack
 * can be overriden
 
 ## Static methods
 Methods can be called without creating an object of class
-* referenced by class name, **className.methodName(args)**
+* static methods are associated to the class itself, not to the objects of the class 
+* hence, referenced by class name **className.methodName(args)**
 * designed to be **shared among all objects** created from the same class
-* can't be overriden but can be overloaded
-* stored in Permanent Generation space of heap
-* static methods are associated to the class itself, not to the objects of the class  
+* stored in Metaspace of heap
+* abstract methods can't be static
+* can't use *this* or *super* keywords  
++) Static methods are resolved at compile time. Since method overriding is part of Runtime Polymorphism, static methods can't be overriden.
 
+## Relationships between them
+1. Instance methods can directly access instance variables and methods
+2. Instance methods can direclty access static variables and methods
+3. Static methods can access all static variables and methods
+4. Static methods cannot directly access instance variables and methods. They need some object reference to do so.   
 
 
 
