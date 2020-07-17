@@ -1,7 +1,7 @@
 # Method Overloading
 
 ### Definition
-To create multiple methods of the same name, with different implementations.
+To create multiple methods of the same name, with different arguements and implementations.
 
 ### Why method overload?
   * improves code readability and re-usability
@@ -54,3 +54,17 @@ public class overLoading {
     }
 }
 ```
+
+# Method overriding
+
+# Sum up
+Method overloading | Method overriding
+-------------------|------------------
+To reuse a method name | To override a derived method
+Usually in a single class but also in a child class | Always in two classes in a Is-a relationship
+Must have different paratmeters | Must have the same signature(name and parameters)
+May have differetn return types | Must have the same return type or covariant return type
+May have different access modifiers | Must not have a lower modifier but may have a higher modifier
+May throw different exceptions | Must not throw a new or broader checked exception
+
++)Is-a relationship : a relationship where one class is a subclass of another class, making it a superclass
