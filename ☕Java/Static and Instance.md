@@ -17,7 +17,7 @@ it means exactly a single copy of the field is created to be shared among all in
 
 ## Methods 
 
-## Instance methods
+#### Instance methods
 Methods which required an object of its class to be created before it can be called.
 * belong to the object of the class, not the to class
 * hence, referenced by object name **objectName.methodName(args)**
@@ -25,7 +25,7 @@ Methods which required an object of its class to be created before it can be cal
 * stored in Metaspace of heap but the parameters and their local variables and the return value are allocated in stack
 * can be overriden
 
-## Static methods
+#### Static methods
 Methods can be called without creating an object of class
 * static methods are associated to the class itself, not to the objects of the class 
 * hence, referenced by class name **className.methodName(args)**
