@@ -111,7 +111,7 @@ public class Rectangle extends Shape{
 }
 ```
 ❗ Inheritance is a powerful yet overused and misused mechanism. Think carefully and consider using composition instead.  
-An amazing material [here] (https://www.baeldung.com/java-inheritance-composition)
+An amazing material [here](https://www.baeldung.com/java-inheritance-composition)
 
 ##### Super and This
 * super : refers to the parent class members(fields and methods).
