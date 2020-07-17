@@ -152,10 +152,10 @@ public class Computer{
 ### 🔵Polymorphism : Many + forms
 The mechanism that allows methods to function differently based on the object that the method is referenced by(Assigning different functionality depending on the type of object). Polymorphism allows you to define one interface and have multiple implementations.
 
-* Static/Compile time polymorphism : method overloading
+* Static/Compile time polymorphism : method overloading  
 * Dynamic/Runtime polymorphism : a.k.a dynamic method dispatch. method overriding
 
-➕ **Upcasting**
+➕ **Upcasting**  
 You can use a superclass variable to refer to a subclass object.
 ```java
 class Animal{
