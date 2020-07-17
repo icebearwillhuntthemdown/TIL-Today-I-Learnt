@@ -173,7 +173,7 @@ Animal doggo = new Dog(); // upcasting
 doggo.makeSound();  // "A dog barks!", overriden
 
 Animal katto = new Cat(); // upcasting
-cat.makeSound(); //"A cat meows and hisses!", overriden
+katto.makeSound(); //"A cat meows and hisses!", overriden
 ```
 
 
