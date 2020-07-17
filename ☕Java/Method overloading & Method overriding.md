@@ -56,6 +56,17 @@ public class overLoading {
 ```
 
 # Method overriding
+### Definition
+Defining a method in a subclass that already exists in the superclass with the same signature(name and parameters)
+
+### Why Method Overriding?
+Polymorphism
+
+### Features
+* must have the same name and parameters with the overriden method
+* return type must be the same or covariant return type(subtype of the return type of the overriden method)
+* constructors, private, final methods can't be overriden
+
 
 # Summary
 요약하면, 메소드 오버로딩은 같은 이름을 가졌지만 서로 다른 메소드를 활용하는 것,  
@@ -71,3 +82,4 @@ May have different access modifiers | Must not have a lower modifier but may hav
 May throw different exceptions | Must not throw a new or broader checked exception
 
 +)Is-a relationship : a relationship where one class is a subclass of another class, making it a superclass
++)Covariant return type : the return types of the overriding methods will be subtypes of the return type of the overridden method
