@@ -124,7 +124,7 @@ public class Rectangle extends Shape{
   * hence, commonly used in constructors and setters, but optional in getters
   * this() is used to call another constructor in the current class
 
-➕ Super and This can be used anywhere in a class except static areas.    
+➕ Super and This can be used anywhere in a class except static areas.     
 ➕ super() and this() cannot be used together in the same constructor. 
 
 <br/><br/>
@@ -172,7 +172,7 @@ class Cat extends Animal{
 Animal doggo = new Dog(); // upcasting
 doggo.makeSound();  // "A dog barks!", overriden
 
-Animal cat = new Cat(); // upcasting
+Animal katto = new Cat(); // upcasting
 cat.makeSound(); //"A cat meows and hisses!", overriden
 ```
 
