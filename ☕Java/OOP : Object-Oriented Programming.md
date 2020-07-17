@@ -81,8 +81,8 @@ From within a constructor, you can also call **another constructor in the same c
 
 <br/>
 
-### 🔵 Inheritance 상속  
-The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called **Super class(Parent class)** and the inherting class is **Sub class(Child class)**.
+### 🔵Inheritance : Is-A Relationship
+The mechanism by which one class is allowed to inherit the fields and methods of another class, using **extends** keyword, to improve reusability. The class whose features are inherited is called **Superclass(Parent class)** and the inherting class is **Subclass(Child class)**.
 
 ```java
 public class Shape{
@@ -110,6 +110,8 @@ public class Rectangle extends Shape{
   }
 }
 ```
+❗ Inheritance is a powerful yet overused and misused mechanism. Think carefully and consider using composition instead.  
+An amazing material [here] (https://www.baeldung.com/java-inheritance-composition)
 
 ##### Super and This
 * super : refers to the parent class members(fields and methods).
@@ -126,8 +128,26 @@ public class Rectangle extends Shape{
 
 <br/><br/>
 
-static and instance methods
+### 🔵Composition : Has-A Relationship
+Composition allows us to model objects that are **made up of other objects**. The objects that compose or are contained by one object are destroyed too when that object is destroyed.
 
+```java
+public class Computer{
+  private Case theCase;
+  private Monitor theMonitor;
+  private Motherboard theMotherboard;
   
+  public Computer(Case theCase, Monitor theMonitor, Motherboard theMotherboard){
+    this.theCase = theCase;
+    this.theMonitor = theMonitor;
+    this.Motherboard = theMotherboard;
+  }
+}
+```
+❗ In every scenario where it's possible to establish a semantically correct 'has-a' relationship between a given class and others, the composition is the right choice to make.
+
+
+
+
 
 
