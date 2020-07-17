@@ -111,20 +111,21 @@ public class Rectangle extends Shape{
 }
 ```
 ❗ Inheritance is a powerful yet overused and misused mechanism. Think carefully and consider using composition instead.  
-An amazing material [here](https://www.baeldung.com/java-inheritance-composition)
+➕ An amazing material [here](https://www.baeldung.com/java-inheritance-composition) comparing inheritance and composition
+➕ Every class inherits java.lang.Object, making it the **root class** in Java 
 
 ##### Super and This
 * super : refers to the parent class members(fields and methods).
   * commonly used with method overriding
   * to differentiate the inherited method with overriden method.
   * super() is used to call parent constructor
-* this : refers to the current class members(fields and methods).
+* this : refers to the current class members(fields and methods). *this* holds the reference to current instance
   * used when there's a parameter with the same name as an instance variable
   * hence, commonly used in constructors and setters, but optional in getters
   * this() is used to call another constructor in the current class
 
-❗ Super and This can be used anywhere in a class except static areas.    
-❗ super() and this() cannot be used together in the same constructor.
+➕ Super and This can be used anywhere in a class except static areas.    
+➕ super() and this() cannot be used together in the same constructor. 
 
 <br/><br/>
 
@@ -146,6 +147,34 @@ public class Computer{
 ```
 ❗ In every scenario where it's possible to establish a semantically correct 'has-a' relationship between a given class and others, the composition is the right choice to make.
 
+<br/><br/>
+
+### 🔵Polymorphism : Many + forms
+The mechanism that allows methods to function differently based on the object that the method is referenced by(Assigning different functionality depending on the type of object). Polymorphism allows you to define one interface and have multiple implementations.
+
+* Static/Compile time polymorphism : method overloading
+* Dynamic/Runtime polymorphism : a.k.a dynamic method dispatch. method overriding
+
+➕ **Upcasting**
+You can use a superclass variable to refer to a subclass object.
+```java
+class Animal{
+  void makeSound(){System.out.println("An animal makes some sound");
+}
+class Dog extends Animal{
+  void makeSound(){System.out.println("A dog barks!");
+}
+
+class Cat extends Animal{
+  void makeSound(){System.out.println("A cat meows and hisses!")
+}
+
+Animal doggo = new Dog(); // upcasting
+doggo.makeSound();  // "A dog barks!", overriden
+
+Animal cat = new Cat(); // upcasting
+cat.makeSound(); //"A cat meows and hisses!", overriden
+```
 
 
 
