@@ -57,13 +57,16 @@ public class overLoading {
 
 # Method overriding
 
-# Sum up
+# Summary
+요약하면, 메소드 오버로딩은 같은 이름을 가졌지만 서로 다른 메소드를 활용하는 것,  
+메소드 오버라이딩은 하나의 메소드를 상속을 통해 보다 다양하게 활용하는 것으로 정리할 수 있겠다.
+
 Method overloading | Method overriding
 -------------------|------------------
 To reuse a method name | To override a derived method
 Usually in a single class but also in a child class | Always in two classes in a Is-a relationship
 Must have different paratmeters | Must have the same signature(name and parameters)
-May have differetn return types | Must have the same return type or covariant return type
+May have different return types | Must have the same return type or covariant return type
 May have different access modifiers | Must not have a lower modifier but may have a higher modifier
 May throw different exceptions | Must not throw a new or broader checked exception
 
