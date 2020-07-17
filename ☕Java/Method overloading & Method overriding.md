@@ -81,5 +81,5 @@ May have different return types | Must have the same return type or covariant re
 May have different access modifiers | Must not have a lower modifier but may have a higher modifier
 May throw different exceptions | Must not throw a new or broader checked exception
 
-+)Is-a relationship : a relationship where one class is a subclass of another class, making it a superclass
++)Is-a relationship : a relationship where one class is a subclass of another class, making it a superclass  
 +)Covariant return type : the return types of the overriding methods will be subtypes of the return type of the overridden method
