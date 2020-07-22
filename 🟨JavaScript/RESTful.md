@@ -1,3 +1,3 @@
-# RESTful
+# RESTful - REpresentational State Transfer 
 
-RESTful API에 대해 잘못 알고 있었ㅅ던 것들
+A routing pattern. A way of mapping HTTP routes and CRUD together.
