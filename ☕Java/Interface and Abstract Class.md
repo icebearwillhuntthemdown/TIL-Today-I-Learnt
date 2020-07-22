@@ -41,9 +41,8 @@ public abstract class Animal
 Abstract classes cannot be instantiated. You need a separate class that extends an abstract class.
 
 ## Interface vs Abstract Class
-First things first, consider if the relationship is whether a Is-A or a Has-A(or can) relationship.
-
-날 수 있는 것은 새뿐만이 아니다. 새가 아니지만 날 수 있는 동물들도 있다. 따라서 새와 비행은 Has-A 관계이고, 이 경우 Interface를 쓴다. 
+First things first, consider whether the relationship is a Is-A or a Has-A(or can) relationship. <br/><br/>
+동물, 개, 새 클래스가 있다고 가정해 보자. 개와 새 모두 동물이고(Is-A 관계) 모든 동물은 먹고 숨쉰다. 따라서 추상 클래스 동물 안에 추상 메소드 먹기(), 숨쉬기()를 선언하고 개, 새 클래스에서 상속 받는 편이 좋다.<br/><br/> 날기()는 어떨까? 새가 아니지만 날 수 있는 동물들도 있다. 날기는 새의 특성 중 하나일 뿐이다. 따라서 새와 비행은 Has-A 관계이고 이 경우 인터페이스를 쓴다. 인터페이스로 날기()를 선언하면, 새뿐만 아니라 날다람쥐, 비행기, 잠자리 등에서도 쓸 수 있다. 앞서 인터페이스는 누가, 어떻게보다 **무엇**을 할 것인지에 초점을 맞춘다고 썼었는데 이게 바로 그 예시라고 볼 수 있겠다. 
 
 Interface | Abstract Class
 ------------|--------------
