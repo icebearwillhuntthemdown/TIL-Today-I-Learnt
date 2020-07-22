@@ -189,11 +189,15 @@ class Main {
     katto.setSound("Meow! Meow!");
     katto.sound();   // Katto sounds Meow! Meow!
   
-    //2. Upcasting하는 경우, Dog 클래스의 size에는 접근할 수 없다.
+    //2. Upcasting하는 경우, Dog 클래스의 size에는 접근하려면 명시적 형변환이 필요하다.
     Animal doggo = new Dog(); // Upcasting
     doggo.setName("Doggo");
     doggo.setSound("Woof! Woof!");
     doggo.sound();    // overridden method가 실행돼 sounds -> barks, Doggo barks Woof! Woof!
+    
+    //Dog 클래스의 멤버 변수에 접근하려면 명시적 형변환을 하면 된다.
+    ((Dog)doggo).setSize("Tiny tiny doggo");
+    System.out.println(((Dog)doggo).getSize());    //Tiny tiny doggo
     
     //3. Upcasting 하지 않는 경우, Animal 클래스의 멤버와 Dog 클래스의 멤버 모두에 접근할 수 있다.
     Dog doge = new Dog();
