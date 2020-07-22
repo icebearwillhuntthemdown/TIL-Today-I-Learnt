@@ -156,7 +156,7 @@ The mechanism that allows methods to function differently based on the object th
 * Dynamic/Runtime polymorphism : a.k.a dynamic method dispatch. method overriding
 
 ➕ **Upcasting**  
-You can use a superclass variable to refer to a subclass object.
+You can use a superclass variable to refer to a subclass object. Upcasting is the typecasting of a child object to a parent object. When upcasting, you cannot aceess all the child class members but some specified members of the child that in iherited  from the parent class, for instance, the overridden methods.
 ```java
 class Animal{
   void makeSound(){System.out.println("An animal makes some sound");
