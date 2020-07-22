@@ -47,7 +47,7 @@ First things first, consider if the relationship is whether a Is-A or a Has-A(or
 
 Interface | Abstract Class
 ------------|--------------
-cannot be instantiated, hence no constructor | can be instantiated and can have constructors
+no constructor | can have constructors
 can only have public static final variables | can have member variables
 **implements** keyword | **extends** keyword
 can implement multiple interfaces | can only extend from a single abstract class
