@@ -46,7 +46,7 @@ First things first, consider if the relationship is whether a Is-A or a Has-A(or
 날 수 있는 것은 새뿐만이 아니다. 새가 아니지만 날 수 있는 동물들도 있다. 따라서 새와 비행은 Has-A 관계이고, 이 경우 Interface를 쓴다. 
 
 Interface | Abstract Class
---------------------------
+------------|--------------
 cannot be instantiated, hence no constructor | can be instantiated and can have constructors
 can only have public static final variables | can have member variables
 **implements** keyword | **extends** keyword
