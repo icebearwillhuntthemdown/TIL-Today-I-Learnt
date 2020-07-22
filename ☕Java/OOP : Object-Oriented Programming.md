@@ -176,32 +176,32 @@ class Dog extends Animal{
 	public void sound() {
 		String name = super.getName();
 		String sound = super.getSound();
-		System.out.println(name + " barks " + sound);   // overriding, 내용 변경
+		System.out.println(name + " barks " + sound);   // overriding, sounds -> barks로 내용 변경
 	}
   //+) getter and setter for size...
 }
 
 class Main {
   public static void main(){
-    //Animal 클래스를 그대로 사용할 때
+    //1. Animal 클래스를 그대로 사용하는 경우
     Animal katto = new Animal();
-		katto.setName("Katto");
-		katto.setSound("Meow! Meow!");
-		katto.sound();   // Katto sounds Meow! Meow!
+    katto.setName("Katto");
+    katto.setSound("Meow! Meow!");
+    katto.sound();   // Katto sounds Meow! Meow!
   
-    //Upcasting하는 경우, Dog 클래스의 size에는 접근할 수 없다.
+    //2. Upcasting하는 경우, Dog 클래스의 size에는 접근할 수 없다.
     Animal doggo = new Dog(); // Upcasting
     doggo.setName("Doggo");
     doggo.setSound("Woof! Woof!");
     doggo.sound();    // overridden method가 실행돼 sounds -> barks, Doggo barks Woof! Woof!
     
-    //Upcasting 하지 않는 경우, Animal 클래스의 멤버와 Dog 클래스의 멤버 모두에 접근할 수 있다.
+    //3. Upcasting 하지 않는 경우, Animal 클래스의 멤버와 Dog 클래스의 멤버 모두에 접근할 수 있다.
     Dog doge = new Dog();
     doge.setName("Doge");
     doge.setSound("Mong! Mong!");
     doge.sound();   // overridden method가 실행돼 sounds -> barks, Doge barks Mong! Mong!
     doge.setSize("Big Fluffy Doge");  // Dog 클래스의 멤버에 접근 가능하다
-		System.out.println(doge.getSize());   // Big Fluffy Doge
+    System.out.println(doge.getSize());   // Big Fluffy Doge
   }
 }
 
