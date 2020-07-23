@@ -208,8 +208,11 @@ class Main {
     System.out.println(doge.getSize());   // Big Fluffy Doge
   }
 }
+```
 
-
-
+### 🔵Abstraction
+Focusing on **what needs to be done** rather than *who does it* and *how it's to be done*. When you define the required functionality without actually implementing the code block.
+추상화에 대해서는 [새 글](https://github.com/icebearwillhuntthemdown/TIL-Today-I-Learnt/blob/master/%E2%98%95Java/Interface%20and%20Abstract%20Class.md)로 정리했다. 
+<br/><br/>
 
 
