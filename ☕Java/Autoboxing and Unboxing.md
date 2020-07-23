@@ -12,8 +12,8 @@ List<Integer> intArrayList = new ArrayList<>(); // possible
 * Unboxing : converting a wrapper class into a primitive type. e.g.) Integer -> int  
 `Integer.intValue();`
 
-### Tips
-Below codes don't get an error, as Java compiler is doing the hard work for you! 따봉 컴파일러야 고마워!
+### Tip : Wrapper classes and primitive types are compatible
+Code below doesn't get an error, as Java compiler is doing the hard work for you! 따봉 컴파일러야 고마워!
 ```java
 Integer myInteger = 71;   // Integer myInteger = Integer.valueOf(71);
 int myInt = myInteger;    // int myInt = myInteger.intValue();
