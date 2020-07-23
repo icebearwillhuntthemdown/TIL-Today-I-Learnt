@@ -11,6 +11,7 @@ List<Integer> intArrayList = new ArrayList<>(); // possible
 `Integer.valueOf(int i);`
 * Unboxing : converting a wrapper class into a primitive type. e.g.) Integer -> int  
 `Integer.intValue();`
+<br/>
 
 ### Tip : Wrapper classes and primitive types are compatible
 Code below doesn't get an error, as Java compiler is doing the hard work for you! 따봉 컴파일러야 고마워!
@@ -18,6 +19,7 @@ Code below doesn't get an error, as Java compiler is doing the hard work for you
 Integer myInteger = 71;   // Integer myInteger = Integer.valueOf(71);
 int myInt = myInteger;    // int myInt = myInteger.intValue();
 ```
+<br/>
 
 ### Methods
 * Integer.toString(int i) : returns a String object representing the int argument.
