@@ -11,7 +11,14 @@ public class Box<T>{
   public T get(){ return this.t; }
 }
 ```
-Generic class is defined like `class className<T1, T2, ..., Tn>{/*...*/}`. 'T1, T2, ..., Tn' that are delimited by angle brackets(<>), are **type parameters** or **type variables**. A type variable can be any class type, any interface type, any array type, only if they are **non-primitive** types.
+Generic class is defined like `class className<T1, T2, ..., Tn>{/*...*/}`. 'T1, T2, ..., Tn' that are delimited by angle brackets(<>), are **type parameters** or **type variables**. A type variable can be any class type, any interface type, any array type, only if they are **non-primitive** types. For example, we can instantiated the Box class with various types like below.
+
+```java
+Box<Integer> integerBox = new Box<>();
+Box<Double> doubleBox = new Box<>();
+Box<String> stringBox = new Box<>();
+```
+<br/><br/>
 
 ### Naming conventions
 By convention, type parameter names are single, uppercase letters.
@@ -21,12 +28,15 @@ By convention, type parameter names are single, uppercase letters.
 * V : Value
 * S, U, V etc : 2nd, 3rd, 4th types. (이 알파벳들이 특정 의미를 내포하는 건 아니므로 어떤 알파벳을 써도 무관하다.)
 
+<br/><br/>
+
 ### Invoking and Instantiating a Generic Type
 ```java
 Box<Integer> integerBox = new Box<>();
 ```
 To reference a generic class, you must perform a generic type invocation, which is replacing T with other concrete value, for example Integer. From Java SE7 onwards, you can omit the type argument required to invoke the constructor of a generic class, leaving only the empty angle brackets(<>), a.k.a **the diamond**.
 
+<br/><br/>
 
 ### References
 * [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/java/generics/types.html)
