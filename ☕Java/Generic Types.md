@@ -1,5 +1,4 @@
 # Generic Types
-
 A generic type is a generic class or interface that is parameterised over types. 
 
 ### Generic class
@@ -19,7 +18,6 @@ Box<Double> doubleBox = new Box<>();
 Box<String> stringBox = new Box<>();
 ```
 <br/><br/>
-
 ### Naming conventions
 By convention, type parameter names are single, uppercase letters.
 * E : Element
@@ -27,7 +25,6 @@ By convention, type parameter names are single, uppercase letters.
 * T : Type
 * V : Value
 * S, U, V etc : 2nd, 3rd, 4th types. (이 알파벳들이 특정 의미를 내포하는 건 아니므로 어떤 알파벳을 써도 무관하다.)
-
 <br/><br/>
 
 ### Invoking and Instantiating a Generic Type
@@ -35,7 +32,6 @@ By convention, type parameter names are single, uppercase letters.
 Box<Integer> integerBox = new Box<>();
 ```
 To reference a generic class, you must perform a generic type invocation, which is replacing T with other concrete value, for example Integer. From Java SE7 onwards, you can omit the type argument required to invoke the constructor of a generic class, leaving only the empty angle brackets(<>), a.k.a **the diamond**.
-
 <br/><br/>
 
 ### References
