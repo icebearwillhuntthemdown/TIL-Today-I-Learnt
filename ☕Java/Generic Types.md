@@ -40,6 +40,7 @@ Type parameter and type argument are not interchangeable. The E in `List<E>` is 
 
 +) A **parameterised type** is an **instantiation of a generic type** with actual type arguments.
 `List<String> myList = new ArrayList<>();`
+<br/><br/>
 
 ### References
 * [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/java/generics/types.html)
