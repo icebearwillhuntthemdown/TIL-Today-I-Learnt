@@ -31,8 +31,15 @@ By convention, type parameter names are single, uppercase letters.
 ```java
 Box<Integer> integerBox = new Box<>();
 ```
-To reference a generic class, you must perform a generic type invocation, which is replacing T with other concrete value, for example Integer. From Java SE7 onwards, you can omit the type argument required to invoke the constructor of a generic class, leaving only the empty angle brackets(<>), a.k.a **the diamond**.
+To reference a generic class, you must perform a generic type invocation, which is replacing T with other concrete value, for example Integer. From Java SE7 onwards, you can omit the type argument required to invoke the constructor of a generic class, leaving only the empty angle brackets(<>), a.k.a **the diamond**.  
++) 여담이지만 그동안 생성자 타입 파라미터를 쓰는 게 맞는 건지, 비워두는 게 맞는 건지 정말 궁금했는데 드디어 알게 돼서 속시원하다. 자바 7 이후로는 비워두는 게 좋은 관행이라는 것. 역시 공부를 할수록 마음이 편해진다. 
 <br/><br/>
+
+### Type Parameter vs Type argument
+Type parameter and type argument are not interchangeable. The E in `List<E>` is a **type parameter**, which works as a **placeholder**, and the String in `List<String>` is a **type argument**, which is an **actual type** passed as an argument. You provide type arguments to create a parameterised type. 
+
++) A **parameterised type** is an **instantiation of a generic type** with actual type arguments.
+`List<String> myList = new ArrayList<>();`
 
 ### References
 * [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/java/generics/types.html)
