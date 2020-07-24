@@ -20,7 +20,7 @@ Box<String> stringBox = new Box<>();
 <br/>
 
 ### Why use Generic Types?
-It was only after Java 1.5(a.k.a Java SE 5) that the concept of generic type was introduced. Before then, they used raw type, which is not specifying any type for the type parameter like `List myList = new ArrayList();`. The raw type method is still valid for compatibility, but it's certainly not recommended as the compiler can't check the type safety in that way. Therefore, now we specify types for type parameter or use generic types instead, like `List<String> myList = new ArrayList<>();`.
+It was only after Java 1.5(a.k.a Java SE 5) that the concept of generic type was introduced. Before then, they used raw type, which is not specifying any type for the type parameter like `List myList = new ArrayList();`. The raw type method is still valid for compatibility, but it's certainly not recommended as the **compiler can't check the type safety** in that way. Therefore, now we specify types for type parameter like `List<String> myList = new ArrayList<>();`, or use generic types for more flexibility. 
 
 ### Naming conventions
 By convention, type parameter names are single, uppercase letters.
