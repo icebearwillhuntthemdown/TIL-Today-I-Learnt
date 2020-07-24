@@ -18,6 +18,7 @@ Box<Double> doubleBox = new Box<>();
 Box<String> stringBox = new Box<>();
 ```
 <br/>
+
 ### Naming conventions
 By convention, type parameter names are single, uppercase letters.
 * E : Element
