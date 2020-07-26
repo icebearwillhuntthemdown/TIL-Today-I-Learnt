@@ -17,6 +17,14 @@ Box<Integer> integerBox = new Box<>();
 Box<Double> doubleBox = new Box<>();
 Box<String> stringBox = new Box<>();
 ```
+
+#### Inheritance of Type Parameters
+```java
+public class Box<T extends Tool>{
+  //class declaration
+}
+```
+You can use inheritance to set an upper bound for type parameters. In the example above, only Tool class and its derived classes are valid for type parameter T.
 <br/>
 
 ### Why use Generic Types?
