@@ -39,12 +39,14 @@ Hoisting **does** happen with let and const, but uncaught reference error does o
     let a = 'icebear';
 })();
 ```
+<br/><br/>
 
 ## Conclusion
-* Prefer const over let, and let over var
-* Try not to use var
+Prefer const over let, let over var, and try never to use var.
+
+<br/><br/>
 
 ## References
-https://www.youtube.com/watch?v=dzEieWaOJE0
-https://www.youtube.com/watch?v=j-9_15QBW2s
-https://dev.to/sethusenthil/var-vs-let-vs-const-1cgc
+* https://www.youtube.com/watch?v=dzEieWaOJE0
+* https://www.youtube.com/watch?v=j-9_15QBW2s
+* https://dev.to/sethusenthil/var-vs-let-vs-const-1cgc
