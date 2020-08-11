@@ -35,7 +35,7 @@ As of ES6, let and const, the new ways of variable declaration have been introdu
 Hoisting **does** happen with let and const, but uncaught reference error does occur when they are referenced without declaration. Because there's the temporal dead zone, where they are declared but not set to undefined like var is nor initialised.
 ```javascript
 (function i(){
-    console.log(a);   // error occurs, as it's not set to undefined
+    console.log(a);   // error occurs, as it's not set to undefined nor initialised.
     let a = 'icebear';
 })();
 ```
