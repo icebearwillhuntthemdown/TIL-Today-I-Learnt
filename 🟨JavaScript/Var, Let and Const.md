@@ -42,7 +42,7 @@ Hoisting **does** happen with let and const, but **uncaught reference error occu
 <br/><br/>
 
 ## Conclusion
-Prefer const over let, let over var, and try never to use var.
+Prefer **const** over let, **let** over var, and try never to use var.
 
 <br/><br/>
 
