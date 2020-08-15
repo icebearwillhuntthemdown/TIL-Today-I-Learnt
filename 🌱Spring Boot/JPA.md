@@ -7,5 +7,37 @@ The Java ORM standard for storing, accessing, and managing Java objects in a rel
 ### ORM : Object Relational Mapping
 RDBMS를 활용하는 프로젝트의 경우 기존에는 MyBatis와 같은 SQL Mapper를 활용해 SQL 쿼리문을 작성했다. CRUD 기능 하나씩 개별 쿼리가 필요하고, 테이블 수와 테이블간의 관계에 따라 쿼리의 복잡성과 유지보수의 어려움은 가중된다. 이같은 불편함을 해소하기 위해 등장한 것이 ORM, 자바의 경우 JPA이다. 책에서는 이뿐만 아니라, JPA는 **객체지향 프로그래밍 언어와 관계형 데이터베이스의 중간에서 서로 다른 패러다임을 이어주기 위한 기술**이라고 설명한다. JPA는 interface고, 이를 구현하는 implementation은 대표적으로 Hibernate가 있다. Spring에서는 Spring DATA JPA라는 모듈을 이용한다고 한다. Hibernate가 있는데 굳이 Spring에서 Spring DATA JPA를 개발한 것은 특정 implementation, DB에 대한 의존도를 낮추기 위함이라고 한다. JPA 활용시 장점은, 1) CRUD 쿼리를 직접 작성할 필요가 없다😲, 2) 객체지향 프로그래밍을 쉽게 할 수 있다는 것.
 
+```java
+@Getter
+@NoArgsConstructor
+@Entity // JPA annotation, DB의 테이블과 매칭될 엔티티 클래스임을 선언
+public class Posts {
+  
+  @Id // PK field 선언
+  @GeneratedValue(strategy = GenerationType.IDENTITY) // PK 생성규칙: auto increment
+  private Long id;
+  
+  @Column(length = 500, nullable = false) // 컬럼임을 선언, 필수는 아님. String default length는 255
+  private String title;
+  
+  @Column(columnDefinition = "TEXT", nullable = false)
+  private String content;
+  
+  private String author;
+  
+  @Builder
+  public Posts(String title, String content, String author){
+    this.title = title;
+    this.content = content;
+    this.author = author;
+  }
+  
+  public void update(String title, String content){
+    this.title = title;
+    this.content = content;
+  }
+}
+```
 
+### @Builder
 
