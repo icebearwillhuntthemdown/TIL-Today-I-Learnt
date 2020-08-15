@@ -23,6 +23,7 @@ public class Posts {
   @Column(columnDefinition = "TEXT", nullable = false)
   private String content;
   
+  //@Column을 선언하지 않아도 필드는 컬럼으로 인식
   private String author;
   
   @Builder
