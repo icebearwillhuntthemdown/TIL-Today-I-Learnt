@@ -150,7 +150,7 @@ public class Computer{
 <br/><br/>
 
 ### 🔵Polymorphism : Many + forms
-The mechanism that allows methods to function differently based on the object that the method is referenced by(Assigning different functionality depending on the type of object). Polymorphism allows you to define one interface and have multiple implementations.
+The mechanism that allows methods to function differently based on the object that the method is referenced by(Assigning different functionality depending on the type of object). Polymorphism allows you to define one interface and have multiple implementations. 동일한 요청에 대해 서로 다른 방식으로 응답할 수 있는 능력
 
 * Static/Compile time polymorphism : method overloading  
 * Dynamic/Runtime polymorphism : a.k.a dynamic method dispatch. method overriding
