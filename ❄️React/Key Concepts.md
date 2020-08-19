@@ -31,3 +31,10 @@ One way data flow lets easy debugging, as it means you only have to look in the 
 
 ### Cross Platform : React Everywhere
 React doesn't make assumptions about what technology stack you use, but only focuses with the UI. React Native for mobile apps, React 360 for VR apps, Electron and React desktop for desktop apps.
+
+<br/><br/>
+
+## The Job of A React Developer
+1. Decide on components
+2. Decide the state and where it lives in virtual DOM
+3. What changes when state changes
