@@ -1,6 +1,6 @@
 # Key Concepts
 
-**React is...**
+## React is...
 1. **Declarative**  
   Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
 1. **Component-based**  
