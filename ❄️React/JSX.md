@@ -7,7 +7,7 @@ JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. 
 <br/><br/>
 
 ## Syntax
-* { } : embedding JavaScript expressions
+* { } : embedding JavaScript expressions  
   `<h1>Hello, {userName}</h1>`
 * Attributes
   * className : HTML의 class 속성에 해당한다. 자바스크립트의 class와 중복되기 때문에 className으로 쓴다.
