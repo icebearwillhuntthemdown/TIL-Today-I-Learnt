@@ -38,3 +38,5 @@ React doesn't make assumptions about what technology stack you use, but only foc
 1. Decide on components
 2. Decide the state and where it lives in virtual DOM
 3. What changes when state changes
+
+ 
