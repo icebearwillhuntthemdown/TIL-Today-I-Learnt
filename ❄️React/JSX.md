@@ -8,7 +8,7 @@ JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. 
 
 ## Syntax
 * { } : embedding JavaScript expressions  
-  `<h1>Hello, {userName}</h1>`
+  `<h1>Hello, {userName}</h1>` `const element = <img src={user.profileUrl}>`
 * Attributes
   * className : HTML의 class 속성에 해당한다. 자바스크립트의 class와 중복되기 때문에 className으로 쓴다.
   * onClick : HTML의 onclick에 해당한다. 자바스크립트의 camel casing 원칙을 따른다.
