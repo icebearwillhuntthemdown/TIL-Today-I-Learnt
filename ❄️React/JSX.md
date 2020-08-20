@@ -1,0 +1,9 @@
+# JSX
+JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. JSX는 HTML을 닮았지만 HTML 요소가 아니라 virtual DOM을 생성한다는 점에서 다르고 또 문법에도 차이가 있다. 
+ 
+
+## Why JSX?
+프론트 단에서는 화면을 만드는 렌더링 로직(rendering logic)과 이벤트 처리, 상태 변화, 데이터 처리 같은 UI 로직이 서로 연결돼 있다. 기존에는 HTML, CSS, JS 파일을 각각 분리함으로써 마크업과 로직을 분리했다. 리액트는 마크업과 로직을 모두 포함하되 느슨하게 결합하는 컴포넌트(components)를 사용한다. 리액트는 애플리케이션을 컴포넌트로 분리하고, 컴포넌트는 state에 변동사항이 발생할 때마다 리렌더링 된다.
+
+## Syntax
+* { } : JavaScript expression
