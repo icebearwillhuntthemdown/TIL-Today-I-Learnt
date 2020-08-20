@@ -1,5 +1,5 @@
 # JSX
-JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. JSX는 HTML을 닮았지만 HTML 요소가 아니라 virtual DOM을 생성한다는 점에서 다르고 또 문법에도 차이가 있다. JSX 표현식은 처리를 거치고 나면 자바스크립트 객체로 취급되기 때문에 자바스크립트 구문 안에 포함될 수 있다.
+JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. JSX는 HTML을 닮았지만 HTML 요소가 아니라 virtual DOM을 생성한다는 점에서 다르고 또 문법에도 차이가 있다. JSX 표현식은 처리를 거치고 나면 자바스크립트 객체로 취급되기 때문에 자바스크립트 구문 안에 포함될 수 있고 자바스크립트 구문을 포함할 수도 있다.
 <br/><br/>
 
 ## Why JSX?
@@ -13,3 +13,29 @@ JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. 
   * className : HTML의 class 속성에 해당한다. 자바스크립트의 class와 중복되기 때문에 className으로 쓴다.
   * onClick : HTML의 onclick에 해당한다. 자바스크립트의 camel casing 원칙을 따른다.
   
+## JSX Represents Objects
+Babel이 `React.createElement()`를 호출해 JSX를 컴파일하면 자바스크립트 객체가 된다. 이 객체들을 리액트 요소(React elements)라고 부르고 리액트는 이 객체들을 통해 DOM을 생성하고 조작한다.
+```javascript
+//JSX syntax
+const element = (
+  <h1 className = "greeting">
+    Hello, world!
+  </h1>
+);
+
+//Babel이 컴파일
+const element = React.createElement(
+  'h1',
+  {className : 'greeting'},
+  'Hello, world!'
+);
+
+//컴파일 결과 자바스크립트 객체화
+const element = {
+  type: 'h1',
+  props: {
+    className: 'greeting',
+    children: 'Hello, world!'
+  }
+};
+```
