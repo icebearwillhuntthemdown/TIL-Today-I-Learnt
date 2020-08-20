@@ -7,12 +7,15 @@ JSX는 JavaScript XML의 약자로, 리액트 요소(elements)를 생성한다. 
 <br/><br/>
 
 ## Syntax
+JSX는 HTML을 닮았기 때문에 문법이 유사하다. HTML과 다른 문법만 정리한다.  
 * { } : embedding JavaScript expressions  
   `<h1>Hello, {userName}</h1>` `const element = <img src={user.profileUrl}>`
 * Attributes
   * className : HTML의 class 속성에 해당한다. 자바스크립트의 class와 중복되기 때문에 className으로 쓴다.
   * onClick : HTML의 onclick에 해당한다. 자바스크립트의 camel casing 원칙을 따른다.
-  
+
+<br/><br/>
+
 ## JSX Represents Objects
 Babel이 `React.createElement()`를 호출해 JSX를 컴파일하면 자바스크립트 객체가 된다. 이 객체들을 리액트 요소(React elements)라고 부르고 리액트는 이 객체들을 통해 DOM을 생성하고 조작한다.
 ```javascript
