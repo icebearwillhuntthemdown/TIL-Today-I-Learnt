@@ -108,3 +108,31 @@ console.log(desc); // [100, 71, 25, 9, 4.44]
 
 **💡tip**
 `sort()` mutates the original array, so to keep the original unchanged you can copy it with `slice()` and call `sort()` on the copy. 
+
+<br/><br/>
+
+### reduce
+Executes a reducer function on each element of the array, resulting in a single value.
+<br/>
+**Syntax**
+`arr.reduce((accumulator, currentValue), initialValue);`
+* accumulator : holds the previous return value
+* currentValue : the current element being processed
+* initialValue : optional. The initial value of accumulator. If not provided, the first element in the array is being used instead.
+
+```javscript
+// Finding the maximum
+const grades = [71, 76, 58, 99, 100, 45];
+const max = grades.reduce((max, currVal) => {
+  if(currVal > max) return currVal;   // the returned currVal now becomes the next max
+  return max;
+}); // 100
+
+// one-line with Math.max()
+const max = grades.reduce((max, currVal) => Math.max(max, currVal));
+
+// Factorial calculation
+const fNum = [1,2,3,4,5,6];
+const facto = fNum.reduce((acc, curr) => acc * curr);
+console.log(facto); // 720
+```
