@@ -14,13 +14,14 @@ const square = (n) => {
 }
 square(3); // 9
 ```
+<br/><br/>
 
 ### Rules
 * Omit `function` keyword
 * Use `=>` symbol
 * `()` are optional only when there's one parameter
 * `()` are necessary when passing multiple parameters or no parameter 
-
+<br/><br/>
 
 ### Implicit Return
 When the return is a single expression, then you can omit `{}` and `return` keyword.
