@@ -106,5 +106,5 @@ console.log(asc); // [4.44, 9, 25, 71, 100]
 console.log(desc); // [100, 71, 25, 9, 4.44]
 ```
 
-**tip**
+**💡tip**
 `sort()` mutates the original array, so to keep the original unchanged you can copy it with `slice()` and call `sort()` on the copy. 
