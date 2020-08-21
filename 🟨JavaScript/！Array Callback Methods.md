@@ -1,6 +1,6 @@
 # Array Callback Methods
 
-1. forEach
+### forEach  
 Performs specified action for each element in an array.
 
 ```javascript
@@ -20,7 +20,7 @@ function printTriple(num){
 ```
 <br/><br/>
 
-2. map
+### map
 Calls a defined callback function on each element of an array, and returns a new array that contains the results. As it creates a new array, the original array doesn't change.
 ```javascript
 const num = [1,2,3,4,5];
@@ -38,5 +38,46 @@ const evenObject = num.map(function(n){
 ```
 <br/><br/>
 
+### find
+Returns the value of the first element in the array that satisfies the provided testing function that returns boolean. No matter how many elements matches the condition it only returns the first one element and stops.
+```javascript
+let movies = [
+  "A single man",
+  "Kingsman",
+  "Suspria"
+];
 
-3. filter, find, reduce, some, every, includes
+let movieWithoutMan = movies.find(movie => !movie.includes('man'));
+console.log(movieWithoutMan); // Suspiria
+```
+<br/><br/>
+
+### filter
+Creates a new array with all elements that pass the test implemented by the provided funtion. It's useful when implementing search box with filters.
+```javascript
+const nums = [1,2,3,4,5];
+const odds = nums.filter(n => n % 2 === 1);
+console.log(odds);
+
+// implementing a search box
+const myFavMovies = [
+    'A single man',
+    'Kingmans',
+    'The man from Earth',
+    'Suspiria',
+    'Madmax'
+  ]
+  
+const query = 'man';
+const result = myFavMovies.filter(movie => movie.toLowerCase().includes(query));
+console.log("search result : " + result); // search result : A single man,Kingmans,The man from Earth 
+```
+<br/><br/>
+
+### every & some
+every() tests whether all elements in the array pass the provided test function while some() tests any of the elements pass the test function. Both returns a boolean value. 
+```javascript
+const nums = [1,3,5,7,10];
+const allEven = nums.every(n => n % 2 === 0); // false
+const anyEven = nums.some(n => n % 2 === 0); // true
+```
