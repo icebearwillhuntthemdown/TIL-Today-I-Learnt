@@ -92,8 +92,8 @@ When `arr.sort(compareFunc(a,b));` returns
 * positive : sort b before a
 
 **Conclusion**
-* asceding : array.sort((a,b) a-b);  
-* descending : array.sort((a,b) => b-a);
+* asceding : `array.sort((a,b) => a-b);`  
+* descending : `array.sort((a,b) => b-a);`
 
 ```javascript
 const numArr = [100, 25, 4.44, 71, 9];
@@ -107,4 +107,4 @@ console.log(desc); // [100, 71, 25, 9, 4.44]
 ```
 
 **tip**
-Sort() mutates the original array, so to keep the original unchanged you can copy it with `slice()` and call sort() on the copy. 
+`sort()` mutates the original array, so to keep the original unchanged you can copy it with `slice()` and call `sort()` on the copy. 
