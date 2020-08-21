@@ -23,6 +23,7 @@ square(3); // 9
 * `()` are necessary when passing multiple parameters or no parameter 
 <br/><br/>
 
+
 ### Implicit Return
 When the return is a single expression, then you can omit `{}` and `return` keyword.
 ```javascript
