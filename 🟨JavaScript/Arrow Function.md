@@ -28,5 +28,5 @@ square(3); // 9
 When the return is a single expression, then you can omit `{}` and `return` keyword.
 ```javascript
 const square = n => n * n;
-console.log(square);  // 1,4,9,16,25
+square(4); // 16
 ```
