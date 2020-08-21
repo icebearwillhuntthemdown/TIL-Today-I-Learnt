@@ -14,7 +14,7 @@ const square = (n) => {
 }
 square(3); // 9
 ```
-<br/><br/>
+<br/>
 
 ### Rules
 * Omit `function` keyword
