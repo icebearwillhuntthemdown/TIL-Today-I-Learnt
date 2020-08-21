@@ -19,4 +19,12 @@ square(3); // 9
 * Omit `function` keyword
 * Use `=>` symbol
 * `()` are optional only when there's one parameter
-* But `()` are necessary when passing multiple parameters or no parameter 
+* `()` are necessary when passing multiple parameters or no parameter 
+
+
+### Implicit Return
+When the return is a single expression, then you can omit `{}` and `return` keyword.
+```javascript
+const square = n => n * n;
+console.log(square);  // 1,4,9,16,25
+```
