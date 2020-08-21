@@ -114,13 +114,13 @@ console.log(desc); // [100, 71, 25, 9, 4.44]
 ### reduce
 Executes a reducer function on each element of the array, resulting in a single value.
 <br/>
-**Syntax**
+**Syntax**  
 `arr.reduce((accumulator, currentValue), initialValue);`
 * accumulator : holds the previous return value
 * currentValue : the current element being processed
 * initialValue : optional. The initial value of accumulator. If not provided, the first element in the array is being used instead.
 
-```javscript
+```javascript
 // Finding the maximum
 const grades = [71, 76, 58, 99, 100, 45];
 const max = grades.reduce((max, currVal) => {
@@ -130,9 +130,14 @@ const max = grades.reduce((max, currVal) => {
 
 // one-line with Math.max()
 const max = grades.reduce((max, currVal) => Math.max(max, currVal));
-
+```
+```javascript
 // Factorial calculation
 const fNum = [1,2,3,4,5,6];
 const facto = fNum.reduce((acc, curr) => acc * curr);
 console.log(facto); // 720
 ```
+```javascript
+//tallying
+```
+
