@@ -1,4 +1,4 @@
-# Arrow Function
+# Arrow Functions
 Arrow function is a syntatically compact alternative to a regular function expression. Arrow functions omit the `function` keyword and use `=>` arrow.
 
 ```javascript
@@ -25,8 +25,14 @@ square(3); // 9
 
 
 ### Implicit Return
-When the return is a single expression, then you can omit `{}` and `return` keyword.
+When the return is a single expression, then you can replace `{}` with `()` and the `return` keyword. Plus, if it's a one-line expression, then you can even skip the `()`.
 ```javascript
+// implicit return
+const square = (n) => (
+  n * n;
+);
+
+// one-line implicit return
 const square = n => n * n;
 square(4); // 16
 ```
