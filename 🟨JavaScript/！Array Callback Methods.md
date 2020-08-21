@@ -81,3 +81,30 @@ const nums = [1,3,5,7,10];
 const allEven = nums.every(n => n % 2 === 0); // false
 const anyEven = nums.some(n => n % 2 === 0); // true
 ```
+<br/><br/>
+
+### sort
+sort() mutates an array in lexicographic order. When you need to organise a numeric array in ascending or descending order you can pass in a compare function as a callback.  
+
+When `arr.sort(compareFunc(a,b));` returns
+* negative : sort a before b
+* 0 : unchanged
+* positive : sort b before a
+
+**Conclusion**
+* asceding : array.sort((a,b) a-b);  
+* descending : array.sort((a,b) => b-a);
+
+```javascript
+const numArr = [100, 25, 4.44, 71, 9];
+const lex = numArr.slice().sort();
+const asc = numArr.slice().sort((a,b) => a-b);
+const desc = numArr.slice().sort((a,b) => b-a);
+
+console.log(lex); // [100, 25, 4.44, 71, 9]
+console.log(asc); // [4.44, 9, 25, 71, 100]
+console.log(desc); // [100, 71, 25, 9, 4.44]
+```
+
+**tip**
+Sort() mutates the original array, so to keep the original unchanged you can copy it with `slice()` and call sort() on the copy. 
