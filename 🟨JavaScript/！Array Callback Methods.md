@@ -139,5 +139,23 @@ console.log(facto); // 720
 ```
 ```javascript
 //tallying
+const votes = ['y','n','y','y','n','n','y','n','y','y'];
+
+//assign an empty object for the initialValue and add values to it
+const results = votes.reduce((tally, vote)=>{
+  if(tally[vote])}
+    tally[vote]++;
+  }else{
+    tally[vote] = 1;
+  }
+  return tally;
+}, {});
+
+//shorter version
+const result = votes.reduce((tally, vote) => {
+  tally[vote] = (tally[vote] || 0) + 1; //if tally[vote] returns undefined, then the expression returns 0 
+  return tally;
+}, {});
+
 ```
 
