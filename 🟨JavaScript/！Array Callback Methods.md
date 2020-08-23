@@ -155,7 +155,7 @@ const results = votes.reduce((tally, vote)=>{
 const result = votes.reduce((tally, vote) => {
   tally[vote] = (tally[vote] || 0) + 1; //if tally[vote] returns undefined, then the expression returns 0 
   return tally;
-}, {});
+}, {}); // {y:6, n:4}
 
 ```
 
