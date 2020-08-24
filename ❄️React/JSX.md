@@ -45,5 +45,5 @@ const element = {
 
 #### Key attribute
 * Anytime you use the map() inside of render,
-* Anytime you have a list of jsx elements one after another,
+* Anytime you have a list of jsx elements one after another,  
 You need a key attribute to differentiate the each element from others so that React can only **react** to those that are actually changed
