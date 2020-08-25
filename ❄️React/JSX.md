@@ -13,6 +13,10 @@ JSX는 HTML을 닮았기 때문에 문법이 유사하다. HTML과 다른 문법
 * Attributes
   * className : HTML의 class 속성에 해당한다. 자바스크립트의 class와 중복되기 때문에 className으로 쓴다.
   * onClick : HTML의 onclick에 해당한다. 자바스크립트의 camel casing 원칙을 따른다.
+  * key : 요소를 구분하기 위한 식별자.  
+    You need a key attribute to differentiate the each element from others so that React can only **react** to those that are actually changed
+    * Anytime you use the map() inside of render,
+    * Anytime you have a list of jsx elements one after another,  
 
 <br/><br/>
 
@@ -43,7 +47,4 @@ const element = {
 };
 ```
 
-#### Key attribute
-* Anytime you use the map() inside of render,
-* Anytime you have a list of jsx elements one after another,  
-You need a key attribute to differentiate the each element from others so that React can only **react** to those that are actually changed
+
