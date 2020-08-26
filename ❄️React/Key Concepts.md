@@ -39,4 +39,14 @@ React doesn't make assumptions about what technology stack you use, but only foc
 2. Decide the state and where it lives in virtual DOM
 3. What changes when state changes
 
+
+## NPM
+NPM is a **package manager** that automates the process of installing, upgrading, configuring, or removing libraries.
+* `npm start`
+* `npm build`
+* `npm test`
+* `npm eject`
+
+Babel : make sure the js files work the same on any browsers  
+Webpack : module bundler. 
  
