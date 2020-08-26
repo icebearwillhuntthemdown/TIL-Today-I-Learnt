@@ -41,7 +41,9 @@ React doesn't make assumptions about what technology stack you use, but only foc
 
 
 ## NPM
-NPM is a **package manager** that automates the process of installing, upgrading, configuring, or removing libraries.
+NPM is a **package manager** that automates the process of installing, upgrading, configuring, or removing libraries. `npm create-react-app` simplifies the installation and configuration.  
+<br/>
+React scripts
 * `npm start`
 * `npm build`
 * `npm test`
