@@ -1,4 +1,4 @@
-# Class Components
+# Components Class
 
 ```javascript
 import React from 'react';
