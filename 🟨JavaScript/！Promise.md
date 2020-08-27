@@ -5,13 +5,15 @@ A `Promise` is a proxy for a value not necessarily known when the promise is cre
 
 ## Syntax
 `new Promise(executor)`
-executor is a function to be called by the constructor during the process of constructing the promise object. The executor is custom code that ties and outcome to promise and that is written by the programmer. The signature of this function is expected to be 
+executor is a function to be called by the constructor during the process of constructing the promise object. The executor is custom code that ties and outcome to promise and that is written by the programmer. The signature of this function is expected to be like below.
 ```javascript
 function(resolutionFunc, rejectionFunc){
   //typically some asynchronous operation
 }
 ```
 <br/>
+
+#### Example
 ```javascript
 const myPromise = new Promise((resolve, reject) =>{
   if(false){
