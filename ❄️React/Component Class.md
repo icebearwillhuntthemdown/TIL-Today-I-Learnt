@@ -28,6 +28,7 @@ function App() {
 
 export default App;
 ```
+<br/><br/>
 
 By using **Component** class we get the access to **state**, which a JS object with properties we can access at any point inside the class.
 
