@@ -28,7 +28,7 @@ As of ES6, let and const, the new ways of variable declaration have been introdu
 * Scope : block scoped
 * Flexibility : cannot be reassigned or redeclared in the same scope
   * Value is mutable : can be modified or added
-  * Reference is immutable 
+  * **Reference is immutable** 
 * Initialising : mandatory on creation
 
 ### TDZ : Temporal Dead Zone
