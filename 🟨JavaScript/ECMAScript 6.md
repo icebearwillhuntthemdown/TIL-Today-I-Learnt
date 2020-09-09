@@ -1,13 +1,15 @@
 # ECMAScript 6 
 
-## Tranpiling
+## Transpiling
 Due to compatibility issues, we need a transpiler and a build tool to fully utilise ECMAScript 6 on any browsers.  
+
 **Transpiling** : Trans- + Compiling.   
 * The process of converting code to a format that can be read by a browser
 * Converts ES6 code to ES5
 * Used in CoffeeScript and TypeScript
 * Babel.js is a widely used transpiler
 * To automate the process of using Babel, we use Webpack, the build tool to load all the necessary dependencies.
+<Br/><br/>
 
 ## ES6 Syntax
 ### Let and Const
