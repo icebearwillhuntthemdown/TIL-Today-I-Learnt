@@ -1,16 +1,17 @@
 # ECMAScript 6 
 
-Transpiling : Trans- + Compiling
-	* The process of converting code to a format that can be read by a browser
-	* Converts ES6 code to ES5
-	* Used in CoffeeScript and TypeScript
-	* Babel.js is widely used
-
-to automate the process of using Babel, we use Webpack, the build tool to load all the necessary dependencies.
+## Tranpiling
+Due to compatibility issues, we need a transpiler and a build tool to fully utilise ECMAScript 6 on any browsers.  
+**Transpiling** : Trans- + Compiling.   
+* The process of converting code to a format that can be read by a browser
+* Converts ES6 code to ES5
+* Used in CoffeeScript and TypeScript
+* Babel.js is a widely used transpiler
+* To automate the process of using Babel, we use Webpack, the build tool to load all the necessary dependencies.
 
 ## ES6 Syntax
-
 ### Let and Const
+<Br/><br/>
 
 ### Template String
 * Syntax
@@ -23,7 +24,8 @@ let score = 100;
 console.log(`Your score is ${score}`) //Your score is 100
 
 ```
- 
+<Br/><br/>
+
 ### Spread Operator 전개구문
 allows an iterable such as an array expression or string to be expanded as literals.
 
@@ -36,6 +38,7 @@ let someColors = ['red', 'blue', 'white'];
 let colors = ['orange', 'yellow', ...(someColors)];
 console.log(colors) //["orange", "yellow", "red", "blue", "white"]
 ```
+<Br/><br/>
 
 ### Map
 Map is a collection that holds **key-value** pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either key or a value.
@@ -70,7 +73,7 @@ Maps and Object both holds key-value pairs but there are some differences
 * Iteration
 	- `for ... of` Loop 
 	- `forEach()`
-
+<Br/><br/>
 
 ### Sets
 `Set` is a collection that can hold any type of values, whether primitive types or ojbect references, but each element must be unique
@@ -103,6 +106,7 @@ Maps and Object both holds key-value pairs but there are some differences
 	Iteration methods
 	- set.keys() / set.values() : returns a new Iterator object that contains the values for each element in the Set object in insertion order.  
 	- set.entries() : returns a new Iterator object that contains the [value, value] pairs for each element in the Set object in insertion order.
+<Br/><br/>
 
 ### For... Of Loop
 ```javascript
@@ -111,7 +115,7 @@ for(let c of colors){
 	console.log(c, "is one of the primary colors")
 }
 ```
-
+<Br/><br/>
 
 ## ES6 Functions & Objects
 ### Default function parameters
@@ -121,10 +125,11 @@ function printPlan(what = "pet my meow", when = 2){
 }
 printPlan(); // Today I'm going to pet my meow at 2
 printPlan("walk my dog", 7); //Today I'm going to walk my dog at 7
-
 ```
+<Br/><br/>
 
 ### arrow function 
+<Br/><br/>
 
 ### enhancing object literals
 a property which has a function value can be shortened.
@@ -156,8 +161,10 @@ cat.meow(3); //meowmeowmeow
 cat.purr(4); //purrpurrpurrpurr
 cat.snore(2); //snoresnore
 ```
+<Br/><br/>
 
 ### destructuring assignment for arrays and objects
+<Br/><br/>
 
 ## ES6 Classes
 ### Declarations
@@ -191,6 +198,7 @@ let Rectangle = class Rectangle2{
 console.log(Rectangle.name); // Rectangle2
 
 ```
+<Br/><br/>
 
 ### Methods
 1. Constructor : There can only be one special method with the name `constructor` in a class. If a class contains more than one occurrence of a `constructor` method `SyntaxError` error will be thrown.
@@ -212,6 +220,7 @@ class Rectangle{
 	}
 }
 ```
+<Br/><br/>
 
 3. Getters and Setters
 available for objects and classes
@@ -239,6 +248,7 @@ class Rectangle{
 	}
 }
 ```
+<Br/><br/>
 
 ### Inheritance
 ```javascript
@@ -251,6 +261,7 @@ class Square extends Rectangle{
 let blueSquare = new Square();
 blueSquare.printInfo();
 ```
+<Br/><br/>
 
 ## TIL
 - Iterables
@@ -258,7 +269,7 @@ blueSquare.printInfo();
 	- new Array(el0, el1, el2, el3) : creates a new array with the given elements
 	- new Array(arrayLength) : creates an empty array with the given length 
 - console.log(a,b) // console.log concatenates the arguments with a whitespace in between them
-
+<Br/><br/>
 
 ## References
 - [LinkedIn Learning](https://www.linkedin.com/learning/learning-ecmascript-6)
