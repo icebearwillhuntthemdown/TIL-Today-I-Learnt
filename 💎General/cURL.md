@@ -1,6 +1,6 @@
 # cURL
 cURL stands for **Client URL**  
-curl is used in command lines or scripts to transfer data to and from a server. It allows us to do HTTP requests from shell.
+curl is used in command lines or scripts to transfer data to and from a server from shell using multiple protocols including HTTP requests 
 
 ## Options
 * `curl [url]` :  calling a GET method
