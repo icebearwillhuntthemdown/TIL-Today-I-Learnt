@@ -1,6 +1,7 @@
 # cURL
 cURL stands for **Client URL**  
 curl is used in command lines or scripts to transfer data to and from a server from shell using multiple protocols including HTTP requests 
+<br/><br/>
 
 ## Options
 * `curl [url]` :  calling a GET method  
@@ -28,7 +29,7 @@ curl is used in command lines or scripts to transfer data to and from a server f
 * `--next` : separates commands so that multiple HTTP methods can be executed in a single command line  
     `--next` resets the method and allow a new set  
     `curl -I http://www.google.com --next http://www.google.com`
-
+<br/><br/>
 
 ## References
 * [curl](https://curl.haxx.se/docs/)
