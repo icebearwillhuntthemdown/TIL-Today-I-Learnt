@@ -22,18 +22,29 @@ A class in Kotlin can hava a primary constructor and one or more secondary const
 
 * Primary constructor  
 The concise way to initialise a class  
-- `class Person constructor(var firstName: String) {/*...*/}`  
+```Kotlin
+class Person constructor(var firstName: String) {/*...*/}
+```
 
 The `constructor` keyword can be omitted when it doesn't have any annotations or visibility modifiers.  
-- `class Person(var firstName: String) {/*...*/}`  
-
+```Kotlin
+class Person(var firstName: String) {/*...*/}
+```
 * Secondary constructors  
 Allows you to put additional initialisation logic. Secondary constructors are prefixed with `constructor` keyword.
-`constructor(parent: Person){/*...*/ }`
+```Kotlin
+class Person(var firstName: String, var lastName: String) {
+    val firstName: String
+    var lastName: String
+    constructor(age: Int) { /*...*/ }
+}
+```
 
 * Default contructor
 If a non-abstract class does not declare any constructors(primary or secondary), it will have a generated primary constructor with no arguments.
-`class Person {/*...*/}`
+```Kotlin 
+class Person {/*...*/}`
+```
 <br/>
 
 ### Creating instances
