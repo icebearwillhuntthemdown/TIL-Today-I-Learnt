@@ -27,7 +27,7 @@ println("$s.length is ${s.length}") // abc.length is 3
 ## Null Safety
 Kotlin's type system is aimed at eliminating the danger of null references, hence `NullPointerException` from code. 
 
-### Nullable
+### Nullable `?`
 A refence must be explicitly marked as nullable with `type?` when null value is possible.
 
 ```Kotlin
