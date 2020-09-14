@@ -14,6 +14,7 @@ fun funName(arg1Name : type, arg2Name:type): returnType {
 }
 ```
     - void return : `Unit` or can be omitted 
+<br/><br/>
 
 ## String templates
 ```kotlin
@@ -23,6 +24,8 @@ println("i = $i") // "i = 10"
 val s = "abc"
 println("$s.length is ${s.length}") // abc.length is 3
 ```
+<br/><br/>
+
 
 ## Null Safety
 Kotlin's type system is aimed at eliminating the danger of null references, hence `NullPointerException` from code. 
@@ -70,6 +73,7 @@ fun foo(node: Node): String? {
     val name = node.getName() ?: throw IllegalArgumentException("name expected")
 }
 ```
+<br/><br/>
 
 
 ## References
