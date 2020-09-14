@@ -75,6 +75,24 @@ fun foo(node: Node): String? {
 ```
 <br/><br/>
 
+## main()
+```Kotlin
+// 
+fun main(args: Array<String>){
+    println("Hello, World!")
+}
+
+// args can be omitted from Kotlin 1.3 and onwards
+fun main(){
+    println("Hello, World!")
+}
+
+//Java
+public static void main(String[] args){
+    System.out.println("Hello, World!")
+}
+```
+<br/><br/>
 
 ## References
 - [Kotlin](https://kotlinlang.org/docs/reference/basic-syntax.html)
