@@ -1,4 +1,4 @@
-# Adroid Basics
+# Android Basics
 
 
 ## App Components
