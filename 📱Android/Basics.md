@@ -1,7 +1,7 @@
 # Adroid Basics
 
 
-##App Components
+## App Components
 Each component is an etnry point through which the system or a user can enter your app.
 
 **Component Types**
