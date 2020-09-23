@@ -47,7 +47,7 @@ If the variable on the left-hand side of `?.` is not null, then it references th
 val a = "Kotlin"
 val b: String? = null
 println(b?.length)  // returns b.length if b is not null, otherwise returns null
-println(a.?length)  // unnecessary safe call
+println(a?.length)  // unnecessary safe call as a is not nullable
 ```
 
 Safe calling can be chained.
@@ -63,7 +63,7 @@ If the expression to the left of `?:` is **not null**, the elvis operator return
 val l: Int = if (b != null) b.length else -1
 
 // using Elvis Operator
-val l = b?.length ?: -1 // b가 null이 아니면 b.length, 
+val l = b?.length ?: -1 // b가 null이 아니면 b.length, null이면 -1 
 ```
 
 Using elvis operator, you can conditionally throw or return by putting them on the right-hand side of the elvis operator.
