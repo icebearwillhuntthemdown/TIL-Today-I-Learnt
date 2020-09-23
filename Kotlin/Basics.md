@@ -40,6 +40,7 @@ a = null    // compile error
 var b: String? = "abc"  // declared as nullable
 b = null // ok
 ```
+<br/>
 
 ### Safe calls `?.`
 If the variable on the left-hand side of `?.` is not null, then it references the variable, otherwise null.
@@ -55,6 +56,7 @@ Safe calling can be chained.
 bob?.department?.head?.name
 ```
 The chain returns null if any of the variables, `bob`, `department`, `head`, is null
+<br/>
 
 ### Elvis Operator `?:`
 If the expression to the left of `?:` is **not null**, the elvis operator returns it, otherwise it returns the expression to the right. The right-hand side expression is evaluated only if the left-hand side in null.
@@ -72,6 +74,12 @@ fun foo(node: Node): String? {
     val parent = node.getParent() ?: return null
     val name = node.getName() ?: throw IllegalArgumentException("name expected")
 }
+```
+<br/>
+### Not Null Assertion Operator `!!`
+`!!` converts any value to a non-null type and throws `NullPointerException` if the value is null.
+```Kotlin
+val l = b!!.length  // !! claims b is not null, if b is null then NPE occurs
 ```
 <br/><br/>
 
