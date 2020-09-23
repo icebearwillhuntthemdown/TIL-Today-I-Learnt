@@ -76,6 +76,7 @@ fun foo(node: Node): String? {
 }
 ```
 <br/>
+
 ### Not Null Assertion Operator `!!`
 `!!` converts any value to a non-null type and throws `NullPointerException` if the value is null.
 ```Kotlin
