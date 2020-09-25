@@ -6,50 +6,7 @@ A component can be either 1)class, or 2)function, but the same rules are applied
 2. returns a React element(jsx)  
 
 ## Class component
-```Javascript
-class someComponent extends React.component{
-
-```
-<br/><br/>
-
-## Functional component
-functional components **don't** have access to state and lifecycle methods as they are parts of a class. Instead, you can use Hooks for functional comoonents. Functional components are only for render() purpose, so it takes props and returns jsx. 
-
-<br/><br/>
-
-
-```javascript
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
-```
-<br/><br/>
-
 By using **Component** class we get the access to **state**, which a JS object with properties we can access at any point inside the class.
-
 ```javascript
 import React, { Component } from 'react';
 import logo from './logo.svg';
@@ -81,3 +38,39 @@ class App extends Component {
 
 export default App;
 ```
+
+
+<br/><br/>
+
+## Functional component
+functional components **don't** have access to state and lifecycle methods as they are parts of a class. Instead, you can use Hooks for functional comoonents. Functional components are only for render() purpose, so it takes props and returns jsx. 
+```javascript
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+<br/><br/>
+
