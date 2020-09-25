@@ -1,4 +1,23 @@
-# Components Class
+# Component
+Components are like JS **functions** for accepting arbitrary inputs(props) and return React elements describing what should appear on the screen.  
+
+A component can be either 1)class, or 2)function, but the same rules are applied in both cases   
+1. the name starts with a capital letter in both cases  
+2. returns a React element(jsx)  
+
+## Class component
+```Javascript
+class someComponent extends React.component{
+
+```
+<br/><br/>
+
+## functional component
+functional components don't have access to state and lifecycle methods.(as they are part of a class). functional components are only for render() purpose, so it takes props and returns jsx.
+
++) break down components : the smaller, more reusable. break down components so that they only implement one small thing.
+<br/><br/>
+
 
 ```javascript
 import React from 'react';
