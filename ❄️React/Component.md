@@ -2,7 +2,7 @@
 Components are like **functions** for accepting arbitrary inputs(props) and return React elements describing what should appear on the screen. The smaller the component, the more reusable. Break down components so that they only implement **one small thing**. 
 
 A component can be either 1)class, or 2)function, but the same rules are applied in both cases   
-1. the name starts with a **capital letter**  
+1. the name starts with a capital letter  
 2. returns a React element(jsx)  
 
 ## Class component
