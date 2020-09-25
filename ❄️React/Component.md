@@ -43,7 +43,7 @@ export default App;
 <br/><br/>
 
 ## Functional component
-functional components **don't** have access to state and lifecycle methods as they are parts of a class. Instead, you can use Hooks for functional comoonents. Functional components are only for render() purpose, so it takes props and returns jsx. 
+Functional components **don't** have access to state and lifecycle methods as they are parts of a class. Instead, you can use Hooks for functional components. Functional components are only for render() purpose, so it takes props and returns jsx. 
 ```javascript
 import React from 'react';
 import logo from './logo.svg';
