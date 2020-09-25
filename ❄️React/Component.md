@@ -6,7 +6,7 @@ A component can be either 1)class, or 2)function, but the same rules are applied
 2. returns a React element(jsx)  
 
 ## Class component
-By using **Component** class we get the access to **state**, which a JS object with properties we can access at any point inside the class.
+By using Component class we get the access to **state**, which a JS object with properties we can access at any point inside the class.
 ```javascript
 import React, { Component } from 'react';
 import logo from './logo.svg';
