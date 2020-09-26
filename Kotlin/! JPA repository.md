@@ -1,13 +1,13 @@
 # JPA Repository
 
-Spring Data는 CrudRepository, PagingAndSortingRepository, JpaRepository
+Spring Data는 CrudRepository, PagingAndSortingRepository, JpaRepository  
 https://www.baeldung.com/spring-data-repositories
 
 
 ## Optional<T>
     - get()
     - orElse(T other)
-    - orElseThrow(exception)
+    - orElseThrow(exception)  
 https://dbbymoon.tistory.com/3
 
 # serializable
