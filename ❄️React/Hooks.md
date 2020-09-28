@@ -1,6 +1,7 @@
 # Hooks
 
 A hook is a special function that lets you "hook into" React features. `useState` is a Hook tat lets you add React state to function components. Thanks to hooks we can write a function component with state, without having to convert it to a class component.
+<br/><br/>
 
 ## `useState`
 ### Syntax
@@ -21,6 +22,7 @@ function AFunctionComponent() {
 // Reading state
 <p>You clicked {count} times/p>
 ```
+<br/><br/>
 
 ## `useEffect`
 `uesEffect` hook allows you to tell React that your component needs to do somthing after every render. It works like the combination of `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
@@ -43,7 +45,7 @@ function AFunctionComponent() {
     })
 }
 ```
-
+<br/><br/>
 
 ## Other hooks
 There are other built-in Hooks APIs explained [here](https://reactjs.org/docs/hooks-reference.html)
