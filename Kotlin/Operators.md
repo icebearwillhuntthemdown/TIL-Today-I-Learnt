@@ -39,6 +39,7 @@ print(x.length) // 6, x is automatically cast to string
 val x: String = y as String // y가 null이면 에러 발생
 ```
 <br/>
+
 - **safe** casting : `as?`  
   `as?`는 형변환에 실패하면 null을 리턴한다 
 ```Kotlin
