@@ -15,9 +15,10 @@
 
 
 
-출처: https://zamezzz.tistory.com/197 [배워가는블로거]
-https://en.wikipedia.org/wiki/Cron#CRON_expression  
-https://zamezzz.tistory.com/197
+- https://zamezzz.tistory.com/197
+- https://en.wikipedia.org/wiki/Cron#CRON_expression  
+- https://zamezzz.tistory.com/197
+- https://crontab.guru/
 
 # 배치
 대용량 데이터에 대한 작업을 특정 시간에 일괄 처리
