@@ -8,7 +8,7 @@ Proxy server is a computer on the Internet with its own IP address that your com
     - can block access to certain web pages based on IP address
     - can change IP address so that the web can't know where you are, hence get access to blocked resources
 * network performance
-    - cache data to save bandwidth 
+    - can cache data to save bandwidth 
 <br/>
 
 ## Reference
