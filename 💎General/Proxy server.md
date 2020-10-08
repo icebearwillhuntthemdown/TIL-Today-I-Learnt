@@ -1,5 +1,6 @@
 # Proxy server
 Proxy server is a computer on the Internet with its own IP address that your computer knows, working as the interface between the end user and the Internet. It forwards the request to the Internet and the response from the Internet.
+<br/>
 
 ## why use proxy server
 * data security
@@ -8,4 +9,7 @@ Proxy server is a computer on the Internet with its own IP address that your com
     - can change IP address so that the web can't know where you are, hence get access to blocked resources
 * network performance
     - cache data to save bandwidth 
+<br/>
+
+## Reference
 https://www.varonis.com/blog/what-is-a-proxy-server/
