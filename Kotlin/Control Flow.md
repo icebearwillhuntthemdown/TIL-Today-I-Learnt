@@ -25,8 +25,9 @@ val max = if(a > b) {
     b       // the last expression is the return value of the block
 }
 ```
-
 ❕ when using `if` as an expression, (1)returning its value, 2)assigning it to a variable) the expression is required to have an `else` branch.
+
+<br/><br/>
 
 ## When
 `when` replaces `switch` statement in Kotlin but with better 
