@@ -1,5 +1,5 @@
 # Control flow 
-<br/>
+
 ## If
 `If`, in Kotlin, is an expression, hence returns a value. Therefore there's no need to use ternary operator as ordinary `if` works just as fine for that role.
 
