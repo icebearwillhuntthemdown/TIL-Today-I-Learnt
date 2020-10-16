@@ -6,8 +6,7 @@
     `"a[bc]+d?".toRegex()`
 3. static factory method
 `Regex.fromLiteral("a[bc]+d?")`
-
-
+</br></br>
 
 ## Character
 - [abc] : includes specified character set
@@ -22,6 +21,7 @@
 - \D : opposite of \d. [^0-9]
 - \s : matches any whitespace character. spaces, tabs, line breaks.
 - \S : opposite of \s
+</br></br>
 
 ## Ref
 - https://www.baeldung.com/kotlin-regular-expressions
