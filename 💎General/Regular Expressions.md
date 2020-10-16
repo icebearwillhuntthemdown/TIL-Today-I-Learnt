@@ -26,3 +26,5 @@
 ## Ref
 - https://www.baeldung.com/kotlin-regular-expressions
 - https://regexr.com/
+- https://stackoverflow.com/questions/336210/regular-expression-for-alphanumeric-and-underscores
+- https://www.geeksforgeeks.org/kotlin-regular-expression/
