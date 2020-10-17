@@ -9,7 +9,7 @@
 val regex = Regex("^.+@gmail.com$")             // matches gmail address 
 regex.matches("icebear@gmail.com")              // true
 regex.matches("icebear@someotherdomain.com")    // false
-```    
+```
 <br/>
 
 2. toRegex()  
@@ -50,8 +50,23 @@ regex.matches("[a-zA-Z]+")         // true
 - \d : includes any digit character. [0-9]
 - \D : opposite of \d. [^0-9]
 - \s : matches any whitespace character. spaces, tabs, line breaks.
-- \S : opposite of \s
+- \S : opposite of \s  
+
+```Kotlin
+// +) Kotlin에서 정규식 기호는 """""" 안에 쓴다
+val regex = Regex("""\w+""")
+val regex2 = Regex("[a-z]+")
+
+regex.matches("paradox")        // true
+regex.matches("para1dox")       // true
+regex.matches("Paradox")        // true
+
+regex2.matches("paradox")       // true
+regex2.matches("para1dox")      // false
+regex2.matches("Paradox")       // false
+```
 </br></br>
+
 
 ## MatchResult?
 <br/><br/>
