@@ -53,22 +53,23 @@ regex.matches("[a-zA-Z]+")         // true
 </br></br>
 
 ## MatchResult?
+<br/><br/>
 
 ## Methods
-- containsMatchIn(input: CharSequence): Boolean  
+- `containsMatchIn(input: CharSequence): Boolean`  
 Indicates whether the regex can find at least one match in the input
-- matches(input: CharSequence): Boolean  
+- `matches(input: CharSequence): Boolean`    
 Indicates whether the regex matches the entire input
-- find()
-- findAll()
-- replace(input: CharSequence, replacement: String): String  
+- `find()`
+- `findAll()`
+- `replace(input: CharSequence, replacement: String): String`  
 replaces all occurrences of the regex in the input with specified replacement string and returns the result
 ```Kotlin
 val regex = Regex("Ice")
 regex.replace("Ice bear, Ice cream, Ice breaking", "Panda") // Panda bear, Panda cream, Panda breaking
 ```
-- replaceFirst(input: CharSequence, replacement: String): String
-
+- `replaceFirst(input: CharSequence, replacement: String): String`
+<br/><br/>
 
 ## Ref
 - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/
