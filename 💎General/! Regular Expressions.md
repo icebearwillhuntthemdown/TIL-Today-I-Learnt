@@ -23,7 +23,7 @@ regex.matches("ice-bear-likes-basking")         // false
 ```
 <br/>
 
-3. fromLiteral()
+3. fromLiteral()  
 `Regex.fromLiteral("a[bc]+d?")` 위의 두 경우와 다르게 파라미터로 넘긴 문자열을 순수 리터럴로 취급한다.  
 
 ```Kotlin
@@ -51,6 +51,24 @@ regex.matches("[a-zA-Z]+")         // true
 - \s : matches any whitespace character. spaces, tabs, line breaks.
 - \S : opposite of \s
 </br></br>
+
+## MatchResult?
+
+## Methods
+- containsMatchIn(input: CharSequence): Boolean  
+Indicates whether the regex can find at least one match in the input
+- matches(input: CharSequence): Boolean  
+Indicates whether the regex matches the entire input
+- find()
+- findAll()
+- replace(input: CharSequence, replacement: String): String  
+replaces all occurrences of the regex in the input with specified replacement string and returns the result
+```Kotlin
+val regex = Regex("Ice")
+regex.replace("Ice bear, Ice cream, Ice breaking", "Panda") // Panda bear, Panda cream, Panda breaking
+```
+- replaceFirst(input: CharSequence, replacement: String): String
+
 
 ## Ref
 - https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/
