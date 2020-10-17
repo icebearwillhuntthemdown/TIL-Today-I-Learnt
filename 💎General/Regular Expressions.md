@@ -23,7 +23,7 @@ regex.matches("ice-bear-likes-basking")         // false
 ```
 <br/>
 
-3. static factory method  
+3. fromLiteral()
 `Regex.fromLiteral("a[bc]+d?")` 위의 두 경우와 다르게 파라미터로 넘긴 문자열을 순수 리터럴로 취급한다.  
 
 ```Kotlin
