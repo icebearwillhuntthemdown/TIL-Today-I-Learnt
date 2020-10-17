@@ -1,7 +1,7 @@
 # Regular Expressions 정규표현식 
 
 ## Creating a regex object
-1. Regex contructor 
+1. Regex contructor   
 `Regex("a[bc]+d?")`
 
 ```Kotlin
@@ -11,7 +11,7 @@ regex.matches("icebear@someotherdomain.com")    // false
 ```    
 <br/>
 
-2. toRegex() 
+2. toRegex()  
 `"a[bc]+d?".toRegex()`
 
 ```Kotlin
@@ -23,7 +23,7 @@ regex.matches("ice-bear-likes-basking")         // false
 ```
 <br/>
 
-3. static factory method 
+3. static factory method  
 `Regex.fromLiteral("a[bc]+d?")` 위의 두 경우와 다르게 파라미터로 넘긴 문자열을 순수 리터럴로 취급한다.  
 
 ```Kotlin
