@@ -34,8 +34,8 @@ regex.matches("[a-zA-Z]+")         // true
 </br></br>
 
 ## Characters
-- + : matches 1 or more of the preceding token
-- * : matches 0 or more of the preceding token
+- \+ : matches 1 or more of the preceding token
+- \* : matches 0 or more of the preceding token
 - ^ : the beginning of a string / opposite
 - $ : the end of a string
 - [abc] : includes specified character set
