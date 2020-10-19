@@ -7,6 +7,14 @@ A hook is a special function that lets you "hook into" React features. `useState
 ### Syntax
 `const [currentState,setStateFunction] = useState(initialState);`
 
++) 배열의 state  
+```Typescript
+const [wbb, setWbb] = useState<Bears[]>([])
+setState(['Icebear', 'Grizz', 'Panda'])
+```
+
++) 꼭 값이 변하는 동적인 변수에만 state를 쓴다고 생각했는데 아니었다. async API의 response를 state에 담기도 한다. 리액트는 state 또는 props가 변해야만 re-render 되므로 처음 렌더링 됐을 때는 값이 비어있다가 setState로 값을 할당하면 다시 렌더 돼 화면에 나타난다.
+
 ### Example
 ```Typescript
 function AFunctionComponent() {
