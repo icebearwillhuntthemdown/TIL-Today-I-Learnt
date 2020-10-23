@@ -33,7 +33,7 @@ function AFunctionComponent() {
 <br/><br/>
 
 ## `useEffect`
-`uesEffect` hook allows you to tell React that your component needs to do somthing after every render. It works like the combination of `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
+`uesEffect` hook allows you to tell React that your component needs to do somthing **after every render**. It works like the combination of `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`.
 
 ### Syntax
 ```Typescript
@@ -52,6 +52,17 @@ function AFunctionComponent() {
         document.title = `You've clicked ${count} times`
     })
 }
+```
+
+### Conditional
+To avoid effect overkill, you can specify a certain `source` to bind with an effect by passing it as the second argument to `useEffect`.
+```Typescript
+useEffect( () => {
+    const subscription = props.source.subscribe()
+    return () => {
+        subscription.unsubscribe()
+    }
+}, [props.source])
 ```
 <br/><br/>
 
