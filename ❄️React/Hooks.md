@@ -64,6 +64,9 @@ useEffect( () => {
     }
 }, [props.source])
 ```
+
++) To fire an effect only once, pass an empty array as the second argument of `useEffect`.
+
 <br/><br/>
 
 ## Other hooks
