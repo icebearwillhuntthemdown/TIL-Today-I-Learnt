@@ -1,6 +1,6 @@
 # JPA Repository
 
-Spring Data는 CrudRepository, PagingAndSortingRepository, JpaRepository  
+Spring Data는 CrudRepository, PagingAndSortingRepository, JpaRepository 인터페이스를 제공한다. PagingAndSortingRepository는 CrudRepository를, JpaRepository는 PagingAndSortingRepository를 상속하기 때문에, 결국 JpaRepository를 쓰면 나머지 두 인터페이스의 함수에도 접근할 수 있다. JPA는 Java Persistence API의 줄임말. 말 그대로 자바가 제공하는 영속성 관련 API로, 데이터 접근 및 가공 작업을 훨씬 수월하게 해준다.     
 https://www.baeldung.com/spring-data-repositories
 
 
