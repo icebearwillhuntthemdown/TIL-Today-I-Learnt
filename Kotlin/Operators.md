@@ -1,5 +1,55 @@
 # Operators
 
+## Conditionals
+### Ternary Operator
+```Kotlin
+// In Java
+Int arbitrary = a > b ? 0 : 100
+
+// In Kotlin
+arbitrary: Int = if (a > b) 0 else 100
+```
+
+### Switch and When
+```Kotlin
+// In Java `switch`
+switch(x) {
+    case 0, 1:
+    System.out.println("x == 0 or x == 1");
+    break;
+
+    case 2:
+    System.out.println("x == 2");
+    break;
+
+    default:
+    System.out.println("x is not 0 nor 1 nor 2")
+}
+
+// In Kotlin `when`
+when (x) {
+    0, 1 -> println("x == 0 or x == 1")
+    2 -> println("x == 2")
+    else -> {
+        println("x is not 0 nor 1 nor 2")
+    }
+}
+```
+
+### `?:` Elvis Operator : For null safety
+```Kotlin
+// In Java
+String ar = "";
+if(a != null) {
+    ar = a;
+} else {
+    ar = b;
+}
+
+// In Kotlin
+var ar = a ?: b
+```
+
 ## `is` : Type check and smart cast operator
 - Type checks : 특정 타입 해당 여부 확인
 ```kotlin
@@ -47,8 +97,6 @@ val x: String? = y as? String // y가 null이면 null 리턴, null이 아니면 
 ``` 
 <br/><br/>
 
-## `?:` : Elvis operator
-[Elvis operator](https://github.com/icebearwillhuntthemdown/TIL-Today-I-Learnt/blob/master/Kotlin/Basics.md) for null safety
 
 ## References
 - [Kotlin](https://kotlinlang.org/docs/reference/typecasts.html)
