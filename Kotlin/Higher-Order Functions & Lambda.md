@@ -27,6 +27,9 @@ val joinedToString = items.fold("Elements: ", { acc, i -> acc + " " + i })  // b
 val product = items.fold(1, Int::times)     
 ```
 
+# Lambda
+[DSL](https://github.com/icebearwillhuntthemdown/TIL-Today-I-Learnt/blob/master/Kotlin/DSL.md)과 
+
 ## To Check Back Later
 - Unit return type
 - receiver
