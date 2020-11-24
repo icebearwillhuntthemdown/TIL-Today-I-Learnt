@@ -28,7 +28,7 @@ val product = items.fold(1, Int::times)
 ```
 
 # Lambda
-[DSL](https://github.com/icebearwillhuntthemdown/TIL-Today-I-Learnt/blob/master/Kotlin/DSL.md)과 
+[DSL](https://github.com/icebearwillhuntthemdown/TIL-Today-I-Learnt/blob/master/Kotlin/DSL.md)과 연결된다
 
 ## To Check Back Later
 - Unit return type
