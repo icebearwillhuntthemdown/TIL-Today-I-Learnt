@@ -37,7 +37,7 @@ loop@ for(being in beings) {
 ## Return with Label
 `return` with label can function like both `break` and `continue`, depending on the context.
 
-1. return from a lambda
+1. **return from a lambda**
 works like `break`
 ```Kotlin
 fun foo() {
@@ -50,7 +50,7 @@ fun foo() {
 // output: 12
 ```
 
-2. return from a lambda with expicit label
+2. **return from a lambda with expicit label**
 works like `continue`
 ```Kotlin
 fun foo() {
@@ -63,7 +63,7 @@ fun foo() {
 // output: 1245 done with explicit label!
 ```
 
-3. return from a lambda with implcit label
+3. **return from a lambda with implcit label**
 works like `continue`
 ```Kotlin
 fun foo() {
@@ -76,7 +76,7 @@ fun foo() {
 // output: 1245 done with implicit label!
 ```
 
-4. return from an anonymous function
+4. **return from an anonymous function**
 works like `continue`, an alternative to lambda 
 ```Kotlin
 fun foo() {
@@ -89,7 +89,7 @@ fun foo() {
 // output: 1245 done with anonymous function!
 ```
 
-5. return from another nesting lambda
+5. **return from another nesting lambda**
 works like `break`
 ```Kotlin
 fun foo() {
