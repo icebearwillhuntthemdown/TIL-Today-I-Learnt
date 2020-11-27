@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 ```
 <br/><br/>
 
-## startActivityForResult()
+## `startActivityForResult(intent: Intent)`
 - start an activity and expect something in return
 - waits for callbacks when the started activity decided to finish
 ```Kotlin
@@ -32,7 +32,7 @@ fun startActivityForResult (intent: Intent, requestCode: Int)
 - requestCode : if >= 0, this code will be returned in onActivityResult()
 <br/><br/>
 
-## setResult()
+## `setResult(resultCode: Int[, data: Intent])`
 - used to set the result that your activity will return to its caller
 ```Kotlin
 fun setResult(int resultCode)
@@ -40,7 +40,7 @@ fun setResult(int resultCode)
 - resultCode: the reulst code to propagate back to the original activity, often RESULT_CANCELLED or RESULT_OK
 <br/><br/>
 
-## onActivityResult()
+## `onActivityResult(requestCode: Int, resultCode: Int, data: Intent)`
 - called when an activity you launched exists
 - returns `requestCode`, `resultCode`, and additional `data` Intent.
 - the result can be received on `onResume()`
