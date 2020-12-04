@@ -1,4 +1,5 @@
-# color
+# Colors
+
 ## 기본 컬러 테마
 - 안드로이드 버전에 따라 달라진다.
 - 접근 방식: `android:color="@android:color/name_the_color"`
