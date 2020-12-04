@@ -1,7 +1,7 @@
 # color
 ## 기본 컬러 테마
 - 안드로이드 버전에 따라 달라진다.
-- 접근 방식: `android:color="@android:color/name_the_color`
+- 접근 방식: `android:color="@android:color/name_the_color"`
 ```xml
 <item android:color="@android:color/black"/>
 <item android:color="@android:color/holo_blue_bright_"/>
@@ -9,7 +9,7 @@
 
 ## 커스텀 컬러 테마
 - 원하는 색에 이름을 붙여 저장해놓고 사용할 수 있다.
-- 접근 방식: `android:color=@color/name_the_color`
+- 접근 방식: `android:color=@color/name_the_color"`
 ```xml
 values/color.xml
 <?xml version="1.0" encoding="utf-8">
