@@ -1,5 +1,6 @@
 # Iterators
 <br/>
+
 ## `for...in` and `for...of`
 `for...in`과 `for...of`은 자주 쓰는 반복문이다. 굳이 `for(let i = 0; i < arr.length; i++)` 같은 보일러 플레이트를 쓰지 않고도 배열 전체를 훑는 반복문을 쓸 수 있어 편리하다. 자주 쓰면서도 이 둘을 구분하지 않고 써왔는데, 공식 문서를 읽다가 차이를 알게 됐다.
 
@@ -38,17 +39,29 @@ weBareBears.length = 0      // 배열 clear
 for (let bear of bears) {
     weBareBears.push(bear)
 }
-console.log(weBareBears)    // "Grizz", "Panda", "Icebear"
+console.log(weBareBears)    // ["Grizz", "Panda", "Icebear"]
 ```
-
-
-
+<br/><br/>
 
 ### `break` & `continue`
 `for...in`과 `for...of`에서는 단순 `for`에서처럼 `break`와 `continue` 키워드를 사용할 수 있다.
 ```typescript
+for (let bear of bears) {
+    if (bear === 'Panda') continue
+    weBareBears.push(bear)
+}
+console.log(weBareBears)    //["Grizz", "Icebear"] 
 
+for (let bear in bears) {
+    if (bear === '1') break
+    weBareBears.push(bears[bear])
+}
+console.log(weBareBears)    // ["Grizz"] 
 ```
+<Br/><br/>
 
-## `array.foreach()`
-### Para
+## `array.forEach()`
+`for...in`이나 `for...of`보다 `forEach()`를 쓰는 경우가 더 잦다. `forEach()`을 사용할 경우 배열의 key, value 모두를 파라미터로 넘길 수 있지만, `break`와 `continue` 키워드를 사용할 수 없다는 차이점이 있다. 
+
+`return`으로 이들을 대체할 수 있다. 
+
