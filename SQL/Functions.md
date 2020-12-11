@@ -2,7 +2,7 @@
 ## array_agg()
 - syntax  
 `ARRAY_AGG ( expression [ORDER BY [sort_expression {ASC | DESC} ]`
-- group by와 함께 쓰이며 배열을 리턴
+- group by와 함께 쓰이며 묶인 값들의 배열을 리턴
 ```sql
 select title
      , ARRAY_AGG (
@@ -13,6 +13,7 @@ select title
 group by title
 order by title
 ```
+<br/><br/>
 
 ## string_agg
 - syntax  
@@ -29,6 +30,7 @@ select title
   inner join actors a using (actor_id)
 group by f.title   
 ```
+<br/><br/>
 
 ## LENGTH()
 - syntax  
