@@ -1,4 +1,4 @@
-## evaluation order
+## Evaluation order
 1. from
 2. select
 3. order by
