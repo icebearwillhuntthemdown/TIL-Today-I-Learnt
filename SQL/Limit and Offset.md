@@ -18,9 +18,9 @@ SELECT columns
 order by film_id
    limit 4 offset 3;
 ```
-
+<br/><br/>
  
- ### `FETCH`
+ ## `FETCH`
  `LIMIT` and `FETCH` are identical, but `FETCH` is **SQL standard** while `LIMIT` isn't.
 
 * syntax
