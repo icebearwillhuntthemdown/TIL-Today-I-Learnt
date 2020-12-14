@@ -1,7 +1,7 @@
 # Joins
 - inner join
 - left & right join
-- full outer join (full join)
+- full (outer) join
 - cross join
 - natural join
 - self-join
