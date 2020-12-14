@@ -4,6 +4,15 @@
 - The query returns only rows that satisfy the condition in the `WHERE` clause
 - Only rows that cause the condition evaluates to true will be included in the result set.
 
+
+### IN
+list of values  
+
+
+### BETWEEN
+range of values  
+
+
 ### Like
 - % : matches any sequence of **zero or more** charaters
 - _ : matches any **single** charater
@@ -22,10 +31,3 @@
 - ~~* : ILIKE
 - !~~ : NOT LIKE
 - !~~* : NOT ILIKE
-
-### IN
-list of values
-
-### BETWEEN
-range of values
-
