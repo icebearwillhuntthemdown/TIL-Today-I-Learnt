@@ -22,3 +22,10 @@
 - ~~* : ILIKE
 - !~~ : NOT LIKE
 - !~~* : NOT ILIKE
+
+### IN
+list of values
+
+### BETWEEN
+range of values
+
