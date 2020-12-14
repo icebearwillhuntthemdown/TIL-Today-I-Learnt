@@ -1,7 +1,12 @@
-## Evaluation order
+# Evaluation order
 1. from
-2. select
-3. order by
+2. where
+3. group by
+4. having
+5. select   * column alias is not available above select
+6. distinct
+7. order by
+8. limit
 
 ## Select
 - concatenator operator `||`
@@ -10,6 +15,10 @@
     + not a good pratice due to performance issue
     + only use the asterisk shorthand when examining data
     + instead, explicitly specify the necessary column names 
+- `DISTINCT`
+    + multiple columns: returns the unique **combinations** of the specified columns
+    + single column: returns unique values in the specified column
+    +  `DISTINCT ON`: returns the **first row** amonst the unique combinations
 
 ## Order by
 `ORDER BY sort_expressions [ASC | DESC] [NULLS FIRST | NULLS LAST]`
