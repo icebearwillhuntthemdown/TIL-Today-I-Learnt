@@ -3,14 +3,14 @@
  - `OFFSET`: skips the given number of rows before the result set
  - should be used with `ORDER BY`
 
-* syntax
+### syntax
 ```sql
-SELECT columns
-  FROM table
- LIMIT n OFFSET m
+select columns
+  from table
+ limit n offset m
 ```
 
-* example
+### example
 ```sql
   select film_id
        , title
@@ -23,13 +23,13 @@ order by film_id
  ## `FETCH`
  `LIMIT` and `FETCH` are identical, but `FETCH` is **SQL standard** while `LIMIT` isn't.
 
-* syntax
+### syntax
 ```sql
 OFFSET n rows
 FETCH FIRST n ROWS only
 ```
 
-* example
+### example
  ```SQL
   select film_id
        , title
