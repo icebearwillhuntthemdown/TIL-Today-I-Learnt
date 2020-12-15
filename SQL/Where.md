@@ -5,8 +5,31 @@
 - Only rows that cause the condition evaluates to true will be included in the result set.
 
 
-### IN
-list of values  
+### IN & ANY
+- list of values
+- 조건절에 서브쿼리에서 추출한 값의 리스트 활용
+- IN과 ANY는 호환 가능하며, ANY 대신 SOME을 쓸 수 도 있다
+
+```sql
+// IN
+    select ...columns
+      from table_a a
+     where column_a in (
+                        select column_b
+                          from table_b b
+                         where b.id = a.id
+)
+
+// ANY (SOME)
+    select ...columns
+      from table_a a
+     where column_a = any (
+                        select column_b
+                          from table_b b
+                         where b.id = a.id
+)
+```
+
 
 
 ### BETWEEN
