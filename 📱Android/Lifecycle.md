@@ -1,13 +1,10 @@
-# Lifecycle Methods
-
 1. onCreate()
 2. onStart()
 3. onResume()
 4. onPause()
 5. onStop()
-6. onRestart()
-7. onDestroy()
-<br/><br/> 
+6. onDestroy()
+
 
 ## onCreate()
 - must and called only once for the entire life of the activity
@@ -27,7 +24,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
     init()
 }
 ```
-<br/><br/> 
 
 ## onStart()
 - when: the activity enters `started` state
@@ -38,7 +34,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
     + on completion,
         * the activity enters the `resumed` state
         * the system invokes the `onResume()` method
-<br/><br/> 
 
 ## onResume()
 - when: the activity enters the `resumed` state
@@ -54,11 +49,10 @@ override fun onCreate(savedInstanceState: Bundle?) {
         * the system invokes the `onPause()` method
     + when returning to the `resumed` state,
         * the system calls `onResume` again
-<br/><br/> 
 
 ## onPause()
 - when: when the activity lost focus 
-    + the activity is no longer in the foreground or partially visible
+    + the activity is no longer in the foreground or is partially visible
     + some interruption event occured
     + the activity is partially visible but not in focus, it remains paused
         + multi-window mode and the activity doesn't have focus
@@ -73,13 +67,15 @@ override fun onCreate(savedInstanceState: Bundle?) {
         * if the activity becomes completely invisible, the system calls `onStop`
 - in `paused` sate the activity object is kept resident in memory
     + no need to re-initialize components when resumed
-<br/><br/> 
 
 ## onStop()
 - when: the activity is no longer visible to the user
     + a newly launched activity covers the entire screen
     + the activity has finished running and is about to be terminated
 - activity state: `stopped` until `onRestart()` or `onDestroy()` is called
+    + +)onRestart
+        - called when the user has navigated back to it.
+        - followed by `onStart()` and then `onResume()`
 - what: release or adjust resources that are not needed while the component is not visible on the screen
     + perform relatively CPU-intensive shutdown operations
         * save information to a database   
@@ -88,7 +84,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
     + no need to re-initialize components when resumed
     + the system also keeps track of the current state for each `View` object
         * e.g.) The user input in EditText Widget is retained without having to save it
-<br/><br/> 
+
 
 ## onDestroy()
 - when: before the activity is destroyed
@@ -99,7 +95,32 @@ override fun onCreate(savedInstanceState: Bundle?) {
     + if the activity is finishing, this is the **final** lifecycle callback the activity receives
     + if it's called for a configuration change, the system immdeiately creates a new activity instance and then calls `onCreate()`
     + calls `ON_DESTROY` lifecycle event when the activity moves to the `destroyed` state
-<br/><br/> 
+
+
+## Process
+1. Activity launched
+2. `onCreate()` => `onStart()` => `onResume()`
+3. Activity Running
+4. interrupted => `onPause()`
+5. activity is no longer visible => `onStop()`
+6-1. activity finished 
+    => `onDestroy`
+6-2. user navigates back to the activity
+    => `onRestart()` => `onStart()` => `onResume()`
+6-3. process killed && user navigates to the activity 
+    => `onCreate()` => `onStart()` => `onResume()`
+
+### Examples
+          | 액티비티 A ==========> 액티비티 B ==========> 액티비티 A
+  Events  | 액티비티 A ==========> 화면 꺼짐  ==========> 화면 켜짐
+          | 액티비티 A ==========>  바탕화면  ==========> 액티비티 A
+______________________________________________________________            
+  Status  |  Resumed ==========> Stopped ==========> Resumed 
+______________________________________________________________  
+          |           onPause()          onRestart()
+Lifecycle |           onStop()           onStart()
+          |                              onResume()  
+
 
 ## References
 - https://developer.android.com/guide/components/activities/activity-lifecycle#onresume
